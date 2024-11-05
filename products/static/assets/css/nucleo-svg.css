@@ -15,12 +15,12 @@ Icon colors
 
 .icon use {
   /* icon secondary color - fill */
-  fill: #7ea6f6;
+  fill: #111111;
 }
 
 .icon.icon-outline use {
   /* icon secondary color - stroke */
-  stroke: #7ea6f6;
+  stroke: #111111;
 }
 
 /* --------------------------------
@@ -110,26 +110,26 @@ Stroke effects - Nucleo outline icons
 -------------------------------- */
 
 .icon-outline.icon-stroke-1 {
-  stroke-width: 1px;
+  stroke-width: 10px;
 }
 
 .icon-outline.icon-stroke-2 {
-  stroke-width: 2px;
+  stroke-width: 20px;
 }
 
 .icon-outline.icon-stroke-3 {
-  stroke-width: 3px;
+  stroke-width: 30px;
 }
 
 .icon-outline.icon-stroke-4 {
-  stroke-width: 4px;
+  stroke-width: 40px;
 }
 
 .icon-outline.icon-stroke-1 use,
 .icon-outline.icon-stroke-3 use {
-  -webkit-transform: translateX(0.5px) translateY(0.5px);
-  -moz-transform: translateX(0.5px) translateY(0.5px);
-  -ms-transform: translateX(0.5px) translateY(0.5px);
-  -o-transform: translateX(0.5px) translateY(0.5px);
-  transform: translateX(0.5px) translateY(0.5px);
+  -webkit-transform: translateX(50.5px) translateY(50.5px);
+  -moz-transform: translateX(50.5px) translateY(50.5px);
+  -ms-transform: translateX(50.5px) translateY(50.5px);
+  -o-transform: translateX(50.5px) translateY(50.5px);
+  transform: translateX(50.5px) translateY(50.5px);
 }

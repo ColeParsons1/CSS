@@ -14,9 +14,43 @@ import stripe
 from products.utils import get_product, Product, load_product, load_product_by_slug, load_json_product, load_product_by_id
 from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib import messages
-from stripe_python import get_products
+from requests.auth import HTTPDigestAuth
+import requests
+import json
+from .forms import IntakeForm
+#from stripe_python import get_products
 
 stripe.api_key = getattr(settings, 'STRIPE_SECRET_KEY')
+
+def load_inventory(request):
+
+    url = "http://api_url"
+
+# It is a good practice not to hardcode the credentials. So ask the user to enter credentials at runtime
+    myResponse = requests.get(url,auth=HTTPDigestAuth(raw_input("username: "), raw_input("Password: ")), verify=True)
+#print (myResponse.status_code)
+
+# For successful API call, response code will be 200 (OK)
+    if(myResponse.ok):
+
+    # Loading the response data into a dict variable
+    # json.loads takes in only binary or string variables so using content to fetch binary content
+    # Loads (Load String) takes a Json file and converts into python data structure (dict or list, depending on JSON)
+     jData = json.loads(myResponse.content)
+
+     print("The response contains {0} properties".format(len(jData)))
+     print("\n")
+     for key in jData:
+        print(key) + " : " + jData[key]
+    else:
+  # If response code is not ok (200), print the resulting http error code with description
+     myResponse.raise_for_status()
+
+     context = {
+        'products': jData,
+    }
+    
+    return render(request, context)
 
 def index(request):
     # Collect Products
@@ -38,6 +72,7 @@ def index(request):
     context = {
         'featured': load_product_by_slug('featured'),
         'products': products,
+        'form': IntakeForm,
     }
     return render(request, 'ecommerce/index.html', context)
 
@@ -99,7 +134,7 @@ def create_checkout_session(request, slug):
 
 @staff_member_required
 def load_product_json(request):
-
+         
     json_data = []
     context   = {}
     

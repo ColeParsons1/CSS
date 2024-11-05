@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
- 
+    'crispy_forms',
+    'crispy_bootstrap4',
     'products',                    # <-- Stripe Manager
 ]
 
@@ -135,13 +136,14 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 ############################################################
 ## Stripe Settings
 ############################################################
 
-STRIPE_SECRET_KEY      = os.getenv("STRIPE_SECRET_KEY", None)
-STRIPE_PUBLISHABLE_KEY = os.getenv("STRIPE_PUBLISHABLE_KEY", None)
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51M1yvHABMyiljblNyv0PsM2OOAk0J6tF92msKqQwD3mHGDrSYY6fvo0lfN2pry5qsetXEzB0beuEA8bJAAOcPUds00XXA3nFrH'
+STRIPE_SECRET_KEY = 'sk_test_51M1yvHABMyiljblNlxgjC76jKwkn5GCWjdBruPz2VWfESIgdBqaJvMqvwQ5F0H1Gt7zF2TnlYRWZNVEpKmcbcRNd00y0elqhRX'
 DOMAIN_URL             = os.getenv("DOMAIN_URL", "http://127.0.0.1:8000/")
 
 STRIPE_IS_ACTIVE = False

@@ -1,12 +1,12 @@
 {
     "id": "prod_Mdq6AVJsC9YBCN",
-    "name": "Shoes",
+    "name": "Glock G19",
     "currency": "usd",
-    "price": "300.0",
-    "full_description": "shoes",
-    "info": "shoes",
-    "img_main": "https://files.stripe.com/links/MDB8YWNjdF8xTDdpY25LenQ5V284UGFMfGZsX3Rlc3RfVGlObm1JQVFSSVM0cm1VWVZiS2JVdXFR00syxYnKKC",
-    "img_card": "",
+    "price": "2200.0",
+    "full_description": "GLOCK cutaway models are produced for technical and firearms’ training and clearly illustrate the ingeniously simple internal mechanisms of the GLOCK pistol.",
+    "info": "Compact | 9x19mm",
+    "img_main": "/media/Wallpaper_Desktop_1600x1200_G17-Gen5-Magazines-9mm.jpg",
+    "img_card": "/media/G19_Gen4_Cut-LG.jpg",
     "img_1": "",
     "img_2": "",
     "img_3": ""

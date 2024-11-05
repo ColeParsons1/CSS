@@ -1,10 +1,11 @@
 {% load static %}
 
-<nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+<nav class="navbar navbar-expand-lg top-0 z-index-3 shadow-none navbar-transparent" style="box-shadow: 0px 1px 10px #999;
+background: #181A1E;
+background: radial-gradient(at center, #090909, #0b0b0b);height: 250px;">
+
     <div class="container">
-      <a class="navbar-brand" href="/" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom">
-        Mini eComm
-      </a>
+      <img src="/static/assets/img/TG85.png" style="opacity:0.9;height:150px;margin-top: 0px;margin-right: -160px;" alt="alternatetext">
       <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon mt-2">
           <span class="navbar-toggler-bar bar1"></span>
@@ -16,10 +17,10 @@
         <ul class="navbar-nav navbar-nav-hover w-100">
           
           <!-- Products -->
-          <li class="nav-item dropdown dropdown-hover mx-2 ms-lg-5">
-            <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item dropdown dropdown-hover mx-2 ms-lg-5" style="color: white;">
+            <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" style="color: white;" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
               Products
-              <img src="{% static 'assets/img/down-arrow-dark.svg' %}" alt="down-arrow" class="arrow ms-1">
+              <img src="{% static 'assets/img/down-arrow-white.svg' %}" alt="down-arrow" class="arrow ms-1 d-lg-block d-none">
             </a>
             <div class="dropdown-menu dropdown-menu-animation dropdown-md p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages">
               <div class="d-none d-lg-block">
@@ -120,7 +121,7 @@
 
           <!-- Pages -->
           <li class="nav-item dropdown dropdown-hover mx-2">
-            <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" style="color: white;" id="dropdownMenuPages" data-bs-toggle="dropdown" aria-expanded="false">
               Pages
               <img src="{% static 'assets/img/down-arrow-dark.svg' %}" alt="down-arrow" class="arrow ms-1">
             </a>
@@ -253,7 +254,7 @@
 
           <!-- Blocks -->
           <li class="nav-item dropdown dropdown-hover mx-2">
-            <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" style="color: white;"  id="dropdownMenuBlocks" data-bs-toggle="dropdown" aria-expanded="false">
               Blocks
               <img src="{% static 'assets/img/down-arrow-dark.svg' %}" alt="down-arrow" class="arrow ms-1">
             </a>
@@ -517,7 +518,7 @@
 
           <!-- Help -->
           <li class="nav-item dropdown dropdown-hover mx-2">
-            <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" style="color: white;"  id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false">
               Help
               <img src="{% static 'assets/img/down-arrow-dark.svg' %}" alt="down-arrow" class="arrow ms-1">
             </a>
@@ -708,16 +709,45 @@
             </ul>
           </li>
 
-          <li class="nav-item ms-lg-auto">
-            <a class="nav-link nav-link-icon me-2" href="https://github.com/app-generator/ecommerce-django-stripe" target="_blank">
-              <i class="fa fa-download me-1"></i>
-              <p class="d-inline text-sm z-index-1 font-bold" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download Source Code">Download</p>
-            </a>
-          </li>
-          <li class="nav-item my-auto ms-3 ms-lg-0">
-            <a href="https://appseed.us" class="btn btn-sm  bg-gradient-primary  btn-round mb-0 me-1 mt-2 mt-md-0">Support</a>
-          </li>
-        </ul>
+          <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+            <div class="site-top-icons">
+                <ul>
+                    <li>
+                        {% if request.user.is_authenticated %}
+                            <a href="/"><span><i class="fas fa-user" style='font-size: 25px;
+                              background: -moz-linear-gradient(to right, #d19e1d, #ffd86e, #e3a812);
+                              background: -webkit-linear-gradient(to right, #d19e1d, #ffd86e, #e3a812);
+                              background: linear-gradient(to right, #d19e1d, #ffd86e, #e3a812);
+                              -webkit-background-clip: text;
+                              -moz-background-clip: text;
+                              background-clip: text;
+                              -webkit-text-fill-color: transparent;'></i></span></a>
+                        {% else %}
+                            <a href="/"><span><i
+                                    class="fas fa-sign-in-alt"></i></span></a>
+                        {% endif %}
+                    </li>
+                    <li">
+                        <a href="/" class="site-cart">
+                            <span><i class='fas fa-shopping-cart' style='font-size: 25px;
+                              background: -moz-linear-gradient(to right, #d19e1d, #ffd86e, #e3a812);
+                              background: -webkit-linear-gradient(to right, #d19e1d, #ffd86e, #e3a812);
+                              background: linear-gradient(to right, #d19e1d, #ffd86e, #e3a812);
+                              -webkit-background-clip: text;
+                              -moz-background-clip: text;
+                              background-clip: text;
+                              -webkit-text-fill-color: transparent;'></i></span>
+                            <span class="count">0</span>
+                        </a>
+                    </li>
+                    <li class="d-inline-block d-md-none ml-md-0">
+                        <a href="#" class="site-menu-toggle js-menu-toggle">
+                            <span><i class="fas fa-bars"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
       </div>
     </div>
   </nav>

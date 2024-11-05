@@ -14,15 +14,15 @@
 
   <!-- End Navbar -->
   <!-- -------- START HEADER 7 w/ text and video ------- -->
-  <header class="bg-gradient-dark">
+  <header class="bg-gradient-dark" style="box-shadow: 0 0 5px 10px black;">
     <div class="page-header section-height-75" 
-      {% if product.img_main|first in 'http' %}
+      {% if product.img_main %}
         style="background-image: url('{{product.img_main}}');"
       {% else %}
         style="background-image: url('data:image/png;base64,{{product.img_main}}');"
       {% endif %}
     >
-      <span class="mask bg-gradient-info opacity-6">
+      <span class="mask bg-gradient-danger">
       </span>
       <div class="container">
         <div class="row justify-content-center">
@@ -40,22 +40,22 @@
 
             {% if STRIPE_IS_ACTIVE %}
 
-              <a id="submitBtn" href="#" class="btn bg-white text-dark">
-                Buy Product - ${{ product.price }}
+              <a id="submitBtn" href="#" class="btn bg-gradient-light text-dark" style="color:white;text-decoration-color: white;">
+                Buy now for ${{ product.price }}
               </a>
 
             {% else %}
 
-              <button type="button" class="btn bg-white text-dark" 
+              <button type="button" class="btn bg-gradient-danger text-dark" 
                       data-bs-toggle="modal" 
                       data-bs-target="#stripeModal">
-                Buy Product - ${{ product.price }}
+                Buy now for ${{ product.price }}
               </button>
 
             {% endif %}
 
             <h6 class="text-white mb-2 mt-5">
-              Chat with Support
+              Share on Social Media
             </h6>
             <div class="d-flex justify-content-center">
               <a href="#">
@@ -68,27 +68,16 @@
           </div>
         </div>
       </div>
-      <div class="position-absolute w-100 z-index-1 bottom-0">
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
-          <defs>
-            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-          </defs>
-          <g class="moving-waves">
-            <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40" />
-            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)" />
-            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)" />
-            <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)" />
-            <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)" />
-            <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,1" />
-          </g>
-        </svg>
-      </div>
+      
     </div>
   </header>
   <!-- -------- END HEADER 7 w/ text and video ------- -->
   <!-- Section with four info areas left & one card right with image and waves -->
-  <section class="py-7">
+  <section class="py-7" style="background: rgb(48,48,48);
+  background: radial-gradient(27deg, rgba(48,48,48,1) 0%, rgba(55,55,55,1) 37%, rgba(71,71,71,1) 54%);">
+    
     <div class="container">
+      
       <div class="row align-items-center">
       
         <div class="col-lg-6">
@@ -96,27 +85,14 @@
 
             <div class="col-md-12">
             
-              <div class="info">
-                <div class="icon icon-shape text-center">
-                  <svg class="text-info" width="43px" height="20px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <title>credit-card</title>
-                    <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="Rounded-Icons" transform="translate(-2169.000000, -745.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                        <g id="Icons-with-opacity" transform="translate(1716.000000, 291.000000)">
-                          <g id="credit-card" transform="translate(453.000000, 454.000000)">
-                            <path class="color-background" d="M43,10.7482083 L43,3.58333333 C43,1.60354167 41.3964583,0 39.4166667,0 L3.58333333,0 C1.60354167,0 0,1.60354167 0,3.58333333 L0,10.7482083 L43,10.7482083 Z" id="Path" opacity="0.593633743">
-                            </path>
-                            <path class="color-foreground" d="M0,16.125 L0,32.25 C0,34.2297917 1.60354167,35.8333333 3.58333333,35.8333333 L39.4166667,35.8333333 C41.3964583,35.8333333 43,34.2297917 43,32.25 L43,16.125 L0,16.125 Z M19.7083333,26.875 L7.16666667,26.875 L7.16666667,23.2916667 L19.7083333,23.2916667 L19.7083333,26.875 Z M35.8333333,26.875 L28.6666667,26.875 L28.6666667,23.2916667 L35.8333333,23.2916667 L35.8333333,26.875 Z" id="Shape"></path>
-                          </g>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </div>
-                <h5>
-                  Product Description
-                </h5>
-                <p>
+             
+                <h4 style="margin-top: -40px;">
+                  {{ product.name }} info
+                </h4>
+                <h6>
+                  {{ product.info }}
+                </h6>
+                <p style="margin-top: 0px;color:white;">
                   {{ product.full_description }}  
                 </p>
               </div>
@@ -126,21 +102,21 @@
 
         </div>
 
-        <div class="col-lg-4 ms-auto mt-lg-0 mt-4">
-          <div class="card shadow-lg">
-            <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+        <div class="col-lg-4 ms-auto mt-lg-0 mt-4" style="margin-top: -80px;">
+          <div class="card shadow-lg" style="background-color: #2F2F2F;margin-top: -80px;">
+            <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1" style="background-color: black;">
               <div class="d-block blur-shadow-image">
                 {% if product.img_card %}
                   {% if product.img_card|first in 'http' %}
                   <img src="{{product.img_card}}" alt="img-blur-shadow" class="img-fluid shadow rounded-3">
                   {% else %}
-                  <img src="data:image/png;base64,{{product.img_card}}" alt="img-blur-shadow" class="img-fluid shadow rounded-3">
+                  <img src="{{product.img_card}}" alt="img-blur-shadow" class="img-fluid shadow rounded-3">
                   {% endif %}
                 {% else %}
                   {% if product.img_main|first in 'http'%}
                   <img src="{{product.img_main}}" alt="img-blur-shadow" class="img-fluid shadow rounded-3">
                   {% else %}
-                  <img src="data:image/png;base64,{{product.img_main}}" alt="img-blur-shadow" class="img-fluid shadow rounded-3">
+                  <img src="{{product.img_main}}" alt="img-blur-shadow" class="img-fluid shadow rounded-3" style="margin-top: -60px;">
                   {% endif %}
                 {% endif %}
               </div>
