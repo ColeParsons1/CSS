@@ -30,11 +30,12 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'S#perS3crEt_9999')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'False')
 
-ALLOWED_HOSTS = [] 
+ALLOWED_HOSTS = ['tacticalgentlemensft.com','164.90.134.239', '0.0.0.0', '127.0.0.1', '192.168.1.16','192.168.1.132:8000', '192.168.1.132'] 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'products',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,8 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
-    'crispy_bootstrap4',
-    'products',                    # <-- Stripe Manager
+    'crispy_bootstrap4',                   # <-- Stripe Manager
 ]
 
 MIDDLEWARE = [
@@ -107,8 +107,16 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp-relay.brevo.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = '76ff73001@smtp-brevo.com'
+EMAIL_HOST_PASSWORD = 'yNaLTYh3nIOcqDAd'
+
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
+PYTHONHTTPSVERIFY=0 
 
 LANGUAGE_CODE = 'en-us'
 
@@ -144,7 +152,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 STRIPE_PUBLISHABLE_KEY = 'pk_test_51M1yvHABMyiljblNyv0PsM2OOAk0J6tF92msKqQwD3mHGDrSYY6fvo0lfN2pry5qsetXEzB0beuEA8bJAAOcPUds00XXA3nFrH'
 STRIPE_SECRET_KEY = 'sk_test_51M1yvHABMyiljblNlxgjC76jKwkn5GCWjdBruPz2VWfESIgdBqaJvMqvwQ5F0H1Gt7zF2TnlYRWZNVEpKmcbcRNd00y0elqhRX'
-DOMAIN_URL             = os.getenv("DOMAIN_URL", "http://127.0.0.1:8000/")
+DOMAIN_URL             = os.getenv("DOMAIN_URL", "tacticalgentlemensft.com")
 
 STRIPE_IS_ACTIVE = False
 if STRIPE_SECRET_KEY and STRIPE_PUBLISHABLE_KEY:

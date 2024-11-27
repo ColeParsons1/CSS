@@ -1,16 +1,3 @@
-<!--
-=========================================================
-* Soft UI Design System - v1.0.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/soft-ui-design-system
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
@@ -21,9 +8,9 @@ Coded by www.creative-tim.com
   <link rel="apple-touch-icon" sizes="76x76" href="{% static 'assets/img/apple-icon.png' %}">
   <link rel="icon" type="image/png" href="{% static 'assets/img/favicon.png' %}">
   <link rel="canonical" href="https://appseed.us/ui-kit/soft-ui-design-system"/>
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>
-    Django Stripe Starter - {% block title %}{% endblock %} | AppSeed
+    TG - {% block title %}{% endblock %}
   </title>
 
   <!--     Fonts and icons     -->
@@ -36,7 +23,7 @@ Coded by www.creative-tim.com
   <link href="{% static 'assets/css/nucleo-svg.css' %}" rel="stylesheet" />
   <!-- CSS Files -->
   <link id="pagestyle" href="{% static 'assets/css/soft-design-system.css' %}" rel="stylesheet" />
- 
+  
  
 
   <!-- Specific CSS goes HERE -->
@@ -44,7 +31,7 @@ Coded by www.creative-tim.com
 
 </head>
 
-<body class="{% block body_class %}{% endblock body_class %}">
+<body class="{% block body_class %}{% endblock body_class %}" id="TG" data-spy="scroll">
 
     {% block content %}{% endblock content %}
   
@@ -57,3 +44,336 @@ Coded by www.creative-tim.com
 
 </body>
 </html>
+
+<style>
+  .fa{
+    font-size: 25px;
+  }
+  .navbar {
+  background-color: #060A0F; /*#2e79c0 */
+  position:fixed;
+  left:0;
+  top:0;
+  bottom:94%;
+  width:100%;
+  margin:0;
+  padding:0;
+  transition: all .50s cubic-bezier(.570,0,.080,1);
+  height:200px;
+}
+.navbar--unpinned {
+  transform: translateY(-100%);
+  height:50px;
+}
+@media screen and (max-width: 576px) {
+  html{
+    overflow-y: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+
+  }
+  body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    color:azure !important;
+  }
+  div#banner { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    background-image: linear-gradient(27deg, rgb(222, 164, 28) 15%, rgb(242, 192, 20) 60%);
+    height:40px;
+    color:#060A0F;
+    width: 100%; 
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+    opacity: 1.0;
+    margin-top: 0px;
+    -webkit-animation: Animation 5s ease infinite;
+    -moz-animation: Animation 5s ease infinite;
+    animation: Animation 5s ease infinite;
+}
+
+@-webkit-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+@keyframes Animation { 
+    0%{background-position:10% 0%}
+    50%{background-position:91% 100%}
+    100%{background-position:10% 0%}
+}
+  div#banner-content { 
+    margin: 0 auto; 
+    padding: 10px; 
+    margin-top: -2px !important;
+  }
+  .navbar{
+    height: 280px;
+    margin-top: 0 !important;
+  }
+  .navbar-toggler{
+    float: left !important;
+    margin-top: 60px !important;
+    margin-left: -10px !important;
+    margin-bottom: 0;
+  }
+  .navbar-toggler-icon{
+    float: left !important;
+    margin-top: -15px;
+    margin-left: -10px;
+  }
+
+  .container {
+    width: 100%;
+  }
+  h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    color:azure !important;
+    font-weight: 500;
+
+  }
+  h3.h3m{
+    color:azure !important;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+    padding-bottom: -15px;
+    font-weight: 500;
+    font-size:40px;
+  }
+  h4{
+    color:azure !important;
+    margin-bottom: 50px !important;
+    margin-top: -20px !important;
+    padding-bottom: -15px;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+  }
+  h6{
+    font-size: 16.5px;
+    color:azure !important;
+    margin-top: 20px !important;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  }
+
+  p{
+    color:azure;
+  }
+
+  #myTable{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  border-collapse: collapse;
+  margin-top: 15% !important;
+  font-weight: 600;
+  color:azure !important;
+}
+#myTable thead{
+  
+  font-weight: 600;
+}
+#myTable td{
+  border: none;
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+  user-select: none;
+  font-weight: 500;
+  color:azure !important;
+}
+#myTable tr{
+  background-color: transparent;
+  color:azure !important;
+  user-select: none;
+  
+}
+
+#myTable th{
+  border: none;
+  padding: 0px;
+  color: azure;
+  background-color: transparent;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  user-select: none;
+  color:azure !important;
+}
+
+.button-42 {
+  border-radius: 2px;
+  cursor: pointer;
+  background: -moz-linear-gradient(27deg, rgb(168, 123, 17) 15%, rgb(242, 192, 20) 60%);
+  background: -webkit-linear-gradient(27deg, rgb(168, 123, 17) 15%, rgb(242, 192, 20) 60%);
+  background: linear-gradient(27deg, rgb(168, 123, 17) 15%, rgb(242, 192, 20) 60%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  height: auto;
+  line-height: 1.15;
+  outline: 0;
+  padding: 8px 16px;
+  pointer-events: auto;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  width:100%;
+  z-index: 9;
+  border: none;
+  transition: box-shadow .2s;
+  margin-top: 15px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  float:center;
+  opacity: 1.0 !important;
+}
+.TGlogo{
+  height:170px; 
+  margin-left:0px;
+  margin-top: -25px !important;
+  opacity: 1.0
+}
+
+.navbar{
+    height: 280px;
+ }
+   
+}
+
+
+</style>
+<style type="text/css">
+  @media screen and (min-width: 900px){
+
+  div#banner { 
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    height:40px; 
+    background-image: linear-gradient(27deg, #c99846 15%, rgb(211, 181, 84) 60%);
+    color:#060A0F;
+    width: 100%; 
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+    opacity: 1.0;
+    margin-top: -20px;
+    margin-bottom: 50px;
+    animation: gradient 15s ease infinite !important;
+  }
+  div#banner-content { 
+    margin: 0 auto; 
+    padding: 10px; 
+  }
+
+  .navbar{
+    margin-top:200px;
+    height: 280px !important;
+  }
+  .navbar-nav{
+    margin-top: 50px;
+  }
+  .TGlogo{
+    margin-top: 50px !important;
+  }
+  .fa-shopping-cart{
+    visibility: hidden;
+  }
+  h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    color:azure !important;
+    font-weight: 500;
+
+  }
+  h3.h3m{
+    color:azure !important;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+    padding-bottom: -15px;
+    font-weight: 500;
+    font-size:40px;
+  }
+  h4{
+    color:azure !important;
+    margin-bottom: 50px !important;
+    margin-top: -20px !important;
+    padding-bottom: -15px;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+  }
+  h6{
+    font-size: 16.5px;
+    color:azure !important;
+    margin-top: 20px !important;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  }
+
+  @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+  
+
+}
+
+
+
+ </style>
+
+<script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+    
+    $(window).scroll(function() {
+      $(".slideanim").each(function(){
+        var pos = $(this).offset().top;
+  
+        var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("slide");
+          }
+      });
+    });
+  })
+  </script>

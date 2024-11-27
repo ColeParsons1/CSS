@@ -7,9 +7,11 @@ from django.urls import path
 from products import views
 from django.conf import settings
 from django.conf.urls.static import static
+from products import views
 
 urlpatterns = [
     path('', views.index, name="products_index"),
+	path('account_activation_sent/', views.account_activation_sent, name='account_activation_sent'),
     path('product/<str:slug>/', views.product_details, name='product_details'),
     path('load-product/', views.load_product_json, name='load_product'),
     path('create-product/', views.create_new_product, name='create_product'),

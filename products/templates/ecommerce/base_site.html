@@ -1,0 +1,26 @@
+{% extends "admin/base.html" %}
+
+{% load static%}
+
+{% load i18n grp_tags %}
+
+{% block title %}{{ title }} | {% get_site_title %}
+{% endblock %}
+
+{% block extrastyle %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/soft-design-system.css' %}" />
+
+{% endblock %}
+
+{% block branding %}
+
+{# Use the div#grp-branding for branding elements, e.g. a logo #}
+
+{# <div id="grp-branding"></div> #}
+
+{% endblock %}
+
+{% block nav-global %}
+
+{% endblock %}
