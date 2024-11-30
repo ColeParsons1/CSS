@@ -215,7 +215,7 @@ def index(request):
     writer.writerow(['Item'])
     for row in data:
         #writer.writerow([row['Item_Number']])
-        Item.objects.create(Item_Number=row.Item_Number,
+        '''Item.objects.create(Item_Number=row.Item_Number,
                                Item_Description=row.Item_Description, 
                                MSP=row['MSP'], 
                                Retail_Price=row['Retail_Price'], 
@@ -253,7 +253,7 @@ def index(request):
 
      #data_frame = pandas.DataFrame({'Item': items})
      #data_frame.to_csv('items.csv', index=False, encoding='utf-8')
-    #response.html.render()
+    #response.html.render() '''
     #response = requests.get('https://books.toscrape.com')
     #if  response.status_code != 200:
      #print('Could not fetch the page')
@@ -295,7 +295,7 @@ def index(request):
             #product.save()
             i=Item.objects.all()
             i.delete()
-            Item.objects.create(Item_Number=row[0],
+            '''Item.objects.create(Item_Number=row[0],
                                Item_Description=row[1], 
                                MSP=row[2], 
                                Retail_Price=row[3], 
@@ -320,6 +320,7 @@ def index(request):
                                 
                                 
             #Member.save()
+            '''
     #xmldoc = minidom.parse('davidsons_inventory.xml')
     #root = xmldoc.getroot()
     #elements = []
