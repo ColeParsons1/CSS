@@ -7,7 +7,7 @@ from django.contrib import admin
 from .models import Item
 from .models import Member
 #from friendship.admin import
-admin.site.site_header = 'TG | Admin Dashboard' 
+admin.site.site_header = 'Tactical Gentlemen' 
 admin.site.register(Item)
 admin.site.register(Member)
 
