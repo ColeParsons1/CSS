@@ -12,10 +12,10 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from django.contrib import messages
 
-load_dotenv()  # take environment variables from .env.
+#load_dotenv()  # take environment variables from .env.
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,17 +25,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY', 'S#perS3crEt_9999')
+SECRET_KEY = os.getenv('SECRET_KEY', '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')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'False')
 
-ALLOWED_HOSTS = ['tacticalgentlemensft.com','164.90.134.239', '0.0.0.0', '127.0.0.1', '192.168.1.16','192.168.1.132:8000', '192.168.1.132'] 
+ALLOWED_HOSTS = ['craftedsitesolutions.com','206.189.238.116','thegardensmokeshop.com','164.90.134.239', '0.0.0.0', '127.0.0.1', '192.168.1.16','192.168.1.132:8000', '192.168.1.132'] 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'products',
+    'clients',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
+    'rest_framework_api_key',
+    'rest_framework',
     'crispy_bootstrap4',                   # <-- Stripe Manager
 ]
 

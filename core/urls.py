@@ -15,8 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from clients import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('products.urls'))
+	path('checkout/<item_id>/', views.checkout),
+    #path('deposit/', views.TransferBalanceToStripeView.as_view()),
+	#path('create/', views.CreateStripeAccountView.as_view()),
+    path('', include('clients.urls'))
 ]

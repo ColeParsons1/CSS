@@ -1,0 +1,135 @@
+{% load static %}
+
+  <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3 navbar-transparent" style="color:transparent;margin-top: 0;border-bottom:5px solid black;">
+    <div id="banner">
+      <div id="banner-content">
+      Sign up for 10% off!
+      </div>
+    </div>
+    <div class="container">
+      
+      <button class="navbar-toggler shadow-none ms-2"type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon mt-2" style="margin-top: -115px !important;margin-left: 10px !important;">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </span>
+      </button>
+      <a href="">
+        <img src="/static/assets/img/smoke4.png" class="TGlogo" alt="alternatetext">
+      </a>
+      <i class="fa fa-shopping-cart" style="font-size:26px; margin-top: -160px;color:azure;opacity: 0.9;margin-right:10px;"></i>
+     
+     <a href="">
+    </a>
+      
+      <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 ms-lg-12 ps-lg-5" style="background-color: transparent;" id="navigation">
+        <ul class="navbar-nav navbar-nav-hover w-100" style="margin-left:-60px;background-color: transparent;">
+
+          <!-- clients -->
+          <li class="nav-item dropdown dropdown-hover mx-2 ms-lg-6" style="background-color: transparent; margin-left: -50px;">
+            <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuPages" style="background: transparent;" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left:-40px;">
+              Shop
+              <img src="{% static 'assets/img/down-arrow-dark.svg' %}" alt="down-arrow" class="arrow ms-1 d-lg-none d-block">
+            </a>
+            <div class="dropdown-menu dropdown-menu-animation dropdown-md p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages" style="margin-left:-40px;background-color: black;">
+              <div class="d-none d-lg-block">
+                
+                <a href="/" class="dropdown-item border-radius-md">
+                  Pistols
+                </a>
+                <a href="/" class="dropdown-item border-radius-md">
+                  Rifles
+                </a>
+                <a href="/" class="dropdown-item border-radius-md">
+                  Ammo & Optics
+                </a>
+                <a href="/" class="dropdown-item border-radius-md">
+                  Silencers & Suppressors
+                </a>
+              </div>
+                
+          </li>
+            
+                     
+                 
+
+          <li class="nav-item dropdown dropdown-hover mx-2 ms-lg-6" style="background-color: transparent;margin-left:-50px;">
+            <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuPages" style="background: transparent;" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left:-40px;">
+              Resources
+              <img src="{% static 'assets/img/down-arrow-dark.svg' %}" alt="down-arrow" class="arrow ms-1 d-lg-none d-block">
+            </a>
+            <div class="dropdown-menu dropdown-menu-animation dropdown-md p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages" style="z-index:1000;margin-left:-40px;background-color: black;">
+              <div class="d-none d-lg-block">
+                
+                <a href="/" class="dropdown-item border-radius-md">
+                  Transfers
+                </a>
+                <a href="/" class="dropdown-item border-radius-md">
+                  Classes & Training
+                </a>
+              </div>
+                
+          </li>
+
+          <li class="nav-item dropdown dropdown-hover mx-2 ms-lg-6" style="background-color: transparent;margin-left:-50px;">
+            <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center" id="dropdownMenuPages" style="border-radius: 4px;background:linear-gradient(27deg, rgb(168, 123, 17) 15%, rgb(211, 181, 84) 60%);" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left:-40px;">
+              Membership
+              <img src="{% static 'assets/img/down-arrow-dark.svg' %}" alt="down-arrow" class="arrow ms-1 d-lg-none d-block">
+            </a>
+            <div class="dropdown-menu dropdown-menu-animation dropdown-md p-3 border-radius-lg mt-0 mt-lg-3" aria-labelledby="dropdownMenuPages" style="margin-left:-40px;background-color: black;">
+              <div class="d-none d-lg-block">
+                <a href="#club" class="dropdown-item border-radius-md">
+                  Sign up for 5% off all orders
+                </a>
+              </div>
+                
+          </li>
+                     
+
+
+
+
+          <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+            <div class="site-top-icons">
+                <ul>
+                    <li>
+                        {% if request.user.is_authenticated %}
+                            <a href="/"><span><i class="fas fa-user" style='font-size: 25px;
+                              background: -moz-linear-gradient(27deg, rgba(62,151,41,1) 15%, rgba(101,214,95,1) 60%);
+                              background: -webkit-linear-gradient(27deg, rgba(62,151,41,1) 15%, rgba(101,214,95,1) 60%);
+                              background: linear-gradient(27deg, rgba(62,151,41,1) 15%, rgba(101,214,95,1) 60%);
+                              -webkit-background-clip: text;
+                              -moz-background-clip: text;
+                              background-clip: text;
+                              -webkit-text-fill-color: transparent;'></i></span></a>
+                        {% else %}
+                            <a href="/"><span><i
+                                    class="fas fa-sign-in-alt"></i></span></a>
+                        {% endif %}
+                    </li>
+                    <li style="padding-right:0px;">
+                        <a href="/" class="site-cart" style="padding-right:0px;">
+                            <span><i class='fas fa-shopping-cart' style='font-size: 25px;
+                              background: -moz-linear-gradient(27deg, rgba(62,151,41,1) 15%, rgba(101,214,95,1) 60%);
+                              background: -webkit-linear-gradient(27deg, rgba(62,151,41,1) 15%, rgba(101,214,95,1) 60%);
+                              background: linear-gradient(27deg, rgba(62,151,41,1) 15%, rgba(101,214,95,1) 60%);
+                              -webkit-background-clip: text;
+                              -moz-background-clip: text;
+                              background-clip: text;
+                              -webkit-text-fill-color: transparent;'></i></span>
+                            <span class="count">0</span>
+                        </a>
+                    </li>
+                    <li class="d-inline-block d-md-none ml-md-0">
+                        <a href="#" class="site-menu-toggle js-menu-toggle">
+                            <span><i class="fas fa-bars"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  

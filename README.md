@@ -1,6 +1,6 @@
 # [Django & Stripe](https://blog.appseed.us/django-stripe-mini-ecommerce/) `Mini eCommerce`
 
-**[Open-source eCommerce Starter](https://github.com/app-generator/rocket-ecommerce)** that loads the products from `JSON` files saved in the `templates directory` (no database required) and uses a decent UI for page styling - Powered by **Django & Stripe**.
+**[Open-source eCommerce Starter](https://github.com/app-generator/rocket-ecommerce)** that loads the clients from `JSON` files saved in the `templates directory` (no database required) and uses a decent UI for page styling - Powered by **Django & Stripe**.
 
 <br />
 
@@ -12,8 +12,8 @@
 | --------------------------------------| --------------------------------------| --------------------------------------|
 | ✓ Stack: **Django**, `Bootstrap`      | ✅ Stack: **Django**, `TailwindCSS`              | **Everything in PRO**, plus:         |
 | ✓ Payments: **Stripe**                | ✅ Payments: **Stripe**                          | ✅ **1mo Custom Development**       | 
-| ✓ Minimal Bootstrap Design            | ✅ **Stripe Products Import**                    | ✅ **Team**: PM, Developer, Tester  |
-| ✓ No Database                         | ✅ **Local Products Customization**              | ✅ Weekly Sprints                   |
+| ✓ Minimal Bootstrap Design            | ✅ **Stripe clients Import**                    | ✅ **Team**: PM, Developer, Tester  |
+| ✓ No Database                         | ✅ **Local clients Customization**              | ✅ Weekly Sprints                   |
 | -                                     | ✅ **Categories**, TAGS                          | ✅ Technical SPECS                  |
 | -                                     | ✅ Multi-product **Checkout**                    | ✅ Documentation                    |
 | -                                     | ✅ **Discounts Page**                            | ✅ **30 days Delivery Warranty**    |
@@ -77,7 +77,7 @@ Visit `http://localhost:8000` in your browser. The app should be up & running.
 
 <br />
 
-> 👉 **Step 5** - Access the products and initiate a payment
+> 👉 **Step 5** - Access the clients and initiate a payment
 
 **IMPORTANT**: Make sure your Stripe account is running in `TEST Mode` and Use Test CC provided by Stripe:
 
@@ -88,7 +88,7 @@ Visit `http://localhost:8000` in your browser. The app should be up & running.
 
 ## Create a new Product
 
-- Go to `products/templates/products` directory
+- Go to `clients/templates/clients` directory
 - Create a new `JSON` file with data:
   - `name`: Used in product page & Cards
   - `price`: Used for payment
@@ -97,7 +97,7 @@ Visit `http://localhost:8000` in your browser. The app should be up & running.
   - `short_description`: used in product page
   - `full_description`: used in product page
 - Create Media Files
-  - Go to `products/static/products` 
+  - Go to `clients/static/clients` 
   - Create a directory using the same name as for `JSON` file
     - Create `card.jpg`: 500x335px
     - Create `cover.jpg`: 2100x1400px
@@ -112,15 +112,15 @@ Visit `http://localhost:8000` in your browser. The app should be up & running.
 ## Load and create product from stripe
 
 
-- Go to `Create Product` route in `Products` dropdown [You must be a superuser] 
-- On the left side there should be a button `Get Products From Stripe` this button will pull all the products associated with the stripe account. [demo](./products/static/products/demo/load-stripe-product.png)
-  - There will be product list, you can create a product by clicking the `Create` button. [demo](./products/static/products/demo/create-product.png)
+- Go to `Create Product` route in `clients` dropdown [You must be a superuser] 
+- On the left side there should be a button `Get clients From Stripe` this button will pull all the clients associated with the stripe account. [demo](./clients/static/clients/demo/load-stripe-product.png)
+  - There will be product list, you can create a product by clicking the `Create` button. [demo](./clients/static/clients/demo/create-product.png)
 - On the right side you will see the local product list and a button `Edit`.
-  - You can edit a product from here. [ID is not editable] [demo](./products/static/products/demo/edit-product.png)
+  - You can edit a product from here. [ID is not editable] [demo](./clients/static/clients/demo/edit-product.png)
   
 <br />
 
-> Sample product page generated for [Air ZOOM Pegasus](./products/templates/products/product-air-zoom-pegasus.json), assets loaded from [here](./products/static/products/product-air-zoom-pegasus)
+> Sample product page generated for [Air ZOOM Pegasus](./clients/templates/clients/product-air-zoom-pegasus.json), assets loaded from [here](./clients/static/clients/product-air-zoom-pegasus)
 
 <br />
 
@@ -135,8 +135,8 @@ The project has a simple structure, represented as bellow:
 ```bash
 < PROJECT ROOT >
    |
-   |-- products/__init__.py
-   |-- products/
+   |-- clients/__init__.py
+   |-- clients/
    |    |-- static/
    |    |    |-- <css, JS, images>         # CSS files, Javascripts files
    |    |
@@ -152,7 +152,7 @@ The project has a simple structure, represented as bellow:
    |    |    |    |-- base.html            # Used by common pages like index, UI
    |    |    |    |-- base-fullscreen.html # Used by auth pages (login, register)
    |    |    |
-   |    |    |-- products/                        # Define your products here
+   |    |    |-- clients/                        # Define your clients here
    |    |    |    |-- nike-goalkeeper-match.json  # Sample product
    |
    |-- requirements.txt
