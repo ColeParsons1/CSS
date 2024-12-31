@@ -486,7 +486,7 @@ def checkout(item_id):
     permission_classes = csrf_exempt
     item = Item.objects.get(pk=item_id)
     domain_url = 'http://192.168.1.16:8080'
-    stripe.api_key = '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'
+    #stripe.api_key = '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'
 
     try:
         # Create new Checkout Session for the order
