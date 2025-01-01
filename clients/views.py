@@ -25,7 +25,6 @@ from .forms import IntakeForm
 from django.shortcuts import render
 from django.shortcuts import render, redirect, get_object_or_404
 from django.core.mail import send_mail
-from sendsms import api
 import math
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.forms import AuthenticationForm
@@ -83,8 +82,6 @@ from django.core.mail import BadHeaderError, send_mail
 from django.http import HttpResponse, HttpResponseRedirect
 import xml.etree.ElementTree as ET
 import csv
-from bs4 import BeautifulSoup
-from requests_html import HTMLSession
 import ssl
 
 
