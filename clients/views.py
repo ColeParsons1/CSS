@@ -86,6 +86,14 @@ import csv
 from bs4 import BeautifulSoup
 from requests_html import HTMLSession
 import ssl
+import re
+    
+MOBILE_AGENT_RE = re.compile(r".*(iphone|mobile|androidtouch)", re.IGNORECASE)
+
+
+def is_mobile(request):
+    """Return True if the request comes from a mobile device."""
+    return MOBILE_AGENT_RE.match(request.META['HTTP_USER_AGENT'])
 
 
 
@@ -185,7 +193,11 @@ def index(request):
     context = {
         'form': IntakeForm,
     }
-    return render(request, 'ecommerce/index.html', context)
+    if (is_mobile(request)):
+
+        return render(request, 'ecommerce/index.html', context)
+    else:
+        return render(request, 'ecommerce/temp.html', context)
 
 @csrf_exempt
 def email_tg(request):
@@ -208,12 +220,16 @@ def email_tg(request):
 def send_email(request):
 
  name = request.POST.get("name", "")
- subject = request.POST.get("subject", "")
+ #now = datetime.datetime
+
+# Format the datetime object as a string
+ subject = datetime.datetime.now().strftime("%I:%M%p on %B %d, %Y")
+
  message = request.POST.get("message", "")
  phone = request.POST.get("phone", "")
  email = request.POST.get("email", "")
 
- Potential.objects.create(Company=name, Notes = subject + message + phone + email)
+ Potential.objects.create(Company=name, Notes = subject + " " + message + " " + phone + " " + email)
 
 
        
