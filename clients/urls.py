@@ -19,6 +19,7 @@ urlpatterns = [
     path('delete-product/<str:slug>/', views.delete_product, name='delete_product'),
     path('checkout/<item_id>/', views.checkout, name="checkout"),
     path('success/', views.success, name="success"),
+    path('demo/', views.demo, name="demo"),	
     path('cancelled/', views.cancelled, name="cancelled"),
     path('config/', views.get_publishable_key, name="config"),
 	path('featured/', views.featured, name="featured"),
