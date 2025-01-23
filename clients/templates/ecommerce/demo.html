@@ -1,0 +1,3637 @@
+
+
+{% include "includes/scripts.html" %}
+{% csrf_token %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title></title><meta name="keywords" content=""><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><meta name="description" content="">
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900%7CQuicksand:400,700%7CQuestrial" rel="stylesheet">
+	<!--     Fonts and icons    2a81ca -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap" rel="stylesheet">	
+	<!-- Nucleo Icons -->
+	<link href="{% static 'assets/css/nucleo-icons.css' %}" rel="stylesheet" />
+	<link href="{% static 'assets/css/nucleo-svg.css' %}" rel="stylesheet" />
+	<link href="{% static 'assets/scss/soft-design-system.scss' %}" rel="stylesheet" />
+	<link rel="canonical" href="https://appseed.us/ui-kit/soft-ui-design-system"/>
+	<!-- Font Awesome Icons -->
+	<script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+	<link href="{% static 'assets/css/nucleo-svg.css' %}" rel="stylesheet" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://unpkg.com/headroom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+	<script src="/static/assets/js/plugins/countup.min.js"></script>
+  <script src="/static/assets/js/plugins/choices.min.js"></script>
+  <script src="/static/assets/js/plugins/rellax.min.js"></script>
+  <script src="/static/assets/js/plugins/tilt.min.js"></script>
+  <script src="/static/assets/js/plugins/choices.min.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+  <script src="/static/assets/js/soft-design-system.min.js?v=1.0.1" type="text/javascript"></script>
+  
+	<!-- CSS Files -->
+<div class="header-wrapper" id="header-wrapper"data-spy="scroll" data-target=".top" data-offset="60" style="max-width: 100%!important;
+	height:auto!important;opacity:1;background-repeat: no-repeat;height:70%;background-size: cover !important;width: 100%!important;background-image: url('/static/assets/img/charlotte44444.jpg');
+	background-color: rgba(73,116,165);;">
+	<div class="banner2"id="banner2">
+		
+		<div id="banner-content" style="opacity: 1 !important;font-weight: bold;">
+	
+			<span class="glyphicon glyphicon-earphone" id="contacticons"></span></i>
+			<a style="color:white;margin-left: -10px;"> 980-224-8449</a>
+			
+			    <i class="material-icons" id="contacticons2" onclick="myFunction()"style="z-index:1000000;margin-right: 0px;margin-left:0px;margin-top:5px;">mail</i>
+			<span style="margin-left: -10px;"> admissions@ncsab.com</span>
+			<div id="address">
+			<i class="material-icons">location_on</i>
+			<a style="margin-left: -10px;">820 Tyvola Rd, Suite 200, Charlotte NC</a>
+			</div>
+		</a>
+		
+		</div>
+		
+
+	  
+		  
+
+		<div class="dropdown" id="menu" style="margin-top: 0px;">
+			
+			<i class="material-icons" id="menuicon" onclick="myFunction()" 
+				style="margin-left:365px;color:white;font-weight:100;
+				margin-right:20px;margin-top:-128px;float:right;z-index: 100;font-size:90px">menu</i>
+			<div id="myDropdown" class="dropdown-content" style="width:950px !important;z-index:-100000;margin-top: -32px;background-color:#7fb8f8;">
+			  <a href="#home">Home</a>
+			  <a href="#about">About</a>
+			  <a href="#contact">Therapy Method</a>
+			  <a href="#">Program Details</a>
+			  <a href="#">Student Clinic</a>
+			  <a href="#">CEs</a>
+			  <a href="#">Course Catalog</a>
+			  <a href="#" onclick="closeMenu()" style="font-size: 50px;">X</a>
+			</div>
+		</div>
+
+		
+		
+	  </div>
+	  
+	  
+	<div id="header" class="container">
+		
+		<div id="logo" style="align-items: center;">
+			<img src="/static/assets/img/ncsablogo.png" class="logo"style="align-self:center;position:center;height:230px;margin-bottom:10px;margin-top: 10px;opacity: 1.0;" alt="alternatetext">
+        	<span class="icon icon-cog"></span>
+			<h1 class="cen" style="color:white;font-weight: 900;">North Carolina School of Advanced Bodywork</h1>
+			<h2 style="color:white;margin-left: 50px;margin-right: 50px;font-size: 36px;font-weight: 700;text-align: center;">Clinical / Medical Massage Therapy School</h2>
+			<h2 style="color:white;margin-left: 50px;margin-right: 50px;margin-bottom: -20px;font-size: 36px;font-weight: 700;text-align: center;">
+				<i class="material-icons" style="font-size:36px;margin-top: 10px;">location_on</i>820 Tyvola Rd, Suite 200, Charlotte NC</h2>
+		</div>
+	  
+	</div>
+	<aside id="desktop">
+		<div id="menu3" style="z-index: 1000 !important;margin-bottom: 30px;" >
+			<ul>
+				<li><a href="#" class="menu3" title="">Home</a></li>
+				<li><a href="#" class="menu3" title="">About</a></li>
+				<li><a href="#" class="menu3" title="">Therapy Method</a></li>
+				<li><a href="#" class="menu3" title="">Program Details</a></li>
+				<li><a href="#" class="menu3" title="">Student Clinic</a></li>
+				<li><a href="#" class="menu3" title="">CEs</a></li>
+				<li><a href="#" class="menu3" title="">Course Catalog</a></li>
+			</ul>
+		</div>
+	  </aside>
+
+	  {% include "includes/scripts.html" %}
+	  <div class="position-absolute w-100 z-index-1 bottom-0" style="padding-bottom: 42px;">
+		
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="moving-waves">
+          <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(251,252,254,0.0)" />
+		  <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(251,252,254,0.0)" />
+		  <use xlink:href="#gentle-wave" x="47" y="11" fill="rgba(127,184,251,0.85)" />
+		  <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(127,184,251,0.35)" />
+		  <use xlink:href="#gentle-wave" x="48" y="15" fill="rgba(203,226,253,0.8)" />
+		  <use xlink:href="#gentle-wave" x="48" y="19" fill="rgba(248,249,252,1)" />
+		  <use xlink:href="#gentle-wave" x="48" y="19" fill="rgba(248,249,252,1)" />
+          </g>
+        </svg>
+      </div>
+    </div>
+	
+</div>
+<body>
+<div class="headTop" style="padding-top:0px;">
+
+	<h1 class="weight"style="text-align:center;
+			letter-spacing:0cm;font-size: 70px !important;font-weight:200 !important;
+			font-family: 'Open Sans', sans-serif;margin-left:30px !important;
+			margin-right:30px !important;margin-top:-25px !important;padding-top:80px;color:#29345d;">
+				Are you searching for a clinical / medical
+				massage & bodywork therapy school
+				teaching manual therapy in
+				<br>Charlotte, NC?</h1><br>
+				<br><br>
+</div>
+<div class="wrapper">
+	
+	
+		
+		
+		
+		  
+		<div id="portfolio" style="border:none !important;">
+		<div><span class="arrow-down"></span></div>
+		<div class="headTop" style="padding-bottom: -20px;">
+		<div id="tbox1" style="background-color: #cbe2fd; margin-bottom: 30px;">
+			<div class="title">
+				
+
+
+<h2 style="padding-top:80px;margin-top:-60px; color:#29345d;
+font-weight:700 !important;font-size:70px !important;
+font-family: 400 15px Inter,-apple-system,system-ui,Roboto,'Helvetica Neue',Arial,sans-serif;">WELCOME to NCSAB - 
+The North Carolina School of Advanced Bodywork</h2><br>
+<h2>Our mission is to educate & support YOU in becoming a leading edge
+	therapist in medical massage therapy & neuro-musculo-fascial & joint therapy.</h2>
+
+				</h2>
+				<br>
+				<h2>RECEIVE OUR SCHOOL CATALOG ONLINE!
+
+					See what you will learn at a medical massage therapy school specializing in clinical therapeutics. 
+					Study with top-rated professional therapists.
+					<br><br>
+					<a href="" style="font-weight:500;text-decoration:underline;">Send for our FREE catalog <i i class='fa fa-arrow-right' style="opacity:0.7"></i></a>
+					<br><br>
+					<a href=""style="font-weight: 500;text-decoration:underline;">View our 500-hour program <i i class='fa fa-arrow-right' style="opacity:0.7"></i></a>
+					<br><br>
+					<a href=""style="font-weight: 500;text-decoration:underline;">View details, dates & times <i i class='fa fa-arrow-right' style="opacity:0.7"></i></a>
+			</div>
+			<p></p>
+			<br>
+</div>		
+			<div class="title" style="padding-top: 30px;">
+				<h2 style="color:#29345d;font-weight: bold;
+				font-family: 400 15px Inter,-apple-system,system-ui,Roboto,'Helvetica Neue',Arial,sans-serif;
+				font-size:55px !important;margin: auto;">TO OBTAIN AN APPLICATION:</h2>
+				<br>
+					
+					
+					<h2>Please be our guest and observe a
+						clinical / medical massage therapy class
+						attending one of our <a href=""style="font-weight: 500;text-decoration:underline;">Kinesiology Lectures</a> (on Wednesdays)
+					will help you understand & determine whether our approach is 
+					something you want to learn and work on within your career.
+					<br><br>
+					You can visit NCSAB at any time during working hours.
+					Yet for a deeper knowledge of what we teach,
+					we ask all prospective students to attend a
+					kinesiology lecture on any Wednesday. This way, you will know what we are REALLY about, and
+					whether what we offer is what you are looking for. There is no better way to choose a school 
+					than to participate in a class.<br><br>
+					
+					
+						Please arrive by 9 AM or 6 PM. Meet the instructor, students, 
+						and experience a comprehensive lecture. You may stay 20 minutes or the entire class.
+						Once we have determined we are a good fit for each other, 
+						we may offer you our application and will walk you through the enrollment process.
+						<br><br>
+						<h2>Email: <a href=""style="font-weight: 500;text-decoration:underline;">admissions@ncsab.com <i i class='fa fa-arrow-right' style="opacity:0.7"></i></a></h2>
+						<br>
+						<h2>Phone: <a href=""style="font-weight: 500;text-decoration:underline;">(980) 224-8449 <i i class='fa fa-arrow-right' style="opacity:0.7"></i></a></h2>
+						<br>
+						<h2>Location: <a href=""style="font-weight: 500;text-decoration:underline;">820 Tyvola Road, Suite 200, Charlotte, NC 28217 <i i class='fa fa-arrow-right' style="opacity:0.7"></i></a></h2>
+ 
+				   
+
+				
+					
+					<br><br>
+					
+
+</h2>
+			</div>
+			<p></p>
+		<div id="tbox3" style="padding-bottom:80px;background-color:rgba(73,116,165);">
+			<div class="title">
+				<h2 style="color:white;font-weight: bold;
+				font-family: 400 15px Inter,-apple-system,system-ui,Roboto,'Helvetica Neue',Arial,sans-serif;
+				font-size:55px !important;padding-top:85px;">What is Kinesiology?</h2>
+				<br>
+				<h2 style="color: white;">Kinesiology is the science of how and where bones move
+					when one or more muscles pull on them. There is the simple one
+					muscle, one bone interaction. Then there are the more
+					complex actions of multiple interactions between more than one muscle and one or more bones.
+					At NCSAB, you’ll study kinesiology so you can more precisely evaluate
+					which specific muscles are most responsible for a client’s or patient’s pain or dysfunction.
+					This provides a more efficient & effective approach to tracking down soft tissue issues many,
+					if not most, therapists have trouble resolving.
+					<br><br>
+					
+					<a href=""style="font-weight: 600;color:white;text-decoration:underline;">See more on kinesiology <i class='fa fa-arrow-right' style="opacity:0.7"></i></a></h2>
+			</div>
+			<p></p>
+			</div>
+
+
+	<div id="tbox3">
+		<div class="title" style="padding-bottom: 15px;">
+			<h2 style="text-align: center;color:#29345d;letter-spacing:0cm;font-size: 70px !important;font-weight:400 !important;
+			font-family: 'Open Sans', sans-serif;margin-left:40px !important;
+			margin-right:40px !important;font-size: 75px !important;padding-bottom: 80px;padding-top:60px;">This is YOUR PATH to a highly rewarding career,
+				personally, professionally and financially
+				</h2>
+				<h2>
+				In a fast-growing, high-demand profession, in ONLY 24 weeks!
+				No expensive, time–consuming degree or pre-requisites are necessary.
+				
+				Full time (24 weeks) or part-time (48 weeks),
+				day or evening classes available
+				with flexible in-house payment options.
+				<br><br>
+				Proudly graduate from NCSAB WITHOUT the
+				burden of a government or student loan!
+				
+				Accepting veteran’s benefits
+				flexible payment options:
+				total tuition, books/supplies: $9,000.
+				<br><br>
+				
+				<a href=""style="font-weight: 500;text-decoration:underline;">Please send for your school catalog to
+					learn more about NCSAB <i class='fa fa-arrow-right' style="opacity:0.7"></i></a></h2>
+		</div>
+		 </div>
+
+<div id="tbox3" style="background-color: #cbe2fd;">
+	<div class="title">
+		<br>
+		<h2 style="color:#29345d;font-weight: bold;
+		font-family: 400 15px Inter,-apple-system,system-ui,Roboto,'Helvetica Neue',Arial,sans-serif;
+		font-size:55px !important;padding-top: 35px;">Passing the MBLEx</h2>
+		<br>
+		<h2>The
+			North Carolina Licensing Exam is
+			an important criterion in determining the school offering
+			you the best education is the pass rate on the Massage & Bodywork Licensing Exam (MBLEx).
+			We've maintained a 85% pass rate for 5 years. 
+			Most states require a passing grade on this test to qualify for licensure, 
+			which affords you the privilege to practice in that state. 
+			It is offered at testing centers all over the country including 3 in the Charlotte area.
+			<br><br>
+			Your NCSAB instructors are highly experienced practitioners
+			and are living and breathing experts and specialists in soft tissue therapeutics.
+			
+			Even if you have no background in massage therapy, 
+			our staff will take you step–by–step through the process of learning the basics. 
+			Upon graduation, you’ll understand and be competent and efficient in treating the 
+			most common soft tissue pathologies experienced by the vast majority of clients.
+			<br><br>
+			NOW, for a deep dive into who we are and
+			what you will learn at the NCSAB</h2>
+	</div>
+
+
+
+<div id="tbox3" style="background-color:#f8f9fc;">
+	<div class="title">
+		<br>
+			<h2 style="color:#29345d;font-weight: bold;
+			font-family: 400 15px Inter,-apple-system,system-ui,Roboto,'Helvetica Neue',Arial,sans-serif;
+			font-size:55px !important;">Here's How We Educate & Support YOU
+				 in Becoming a Leading Edge Therapist</h2>
+			<br>
+			<h2>
+			The NCSAB believes there is a fundamental lack of understanding
+			relative to how postural distortions directly and negatively impact the human body. 
+			Many people are not aware that poor posture very often leads to musculoskeletal pathology, 
+			including neuromuscular, myofascial, and various myo-structural issues.
+			
+			“Myo” refers to the muscular system, including the muscle fibers, 
+			the musculo–fascia, and the nerves controlling them.
+			
+			Yet in OTHER cases, but no less important, it is the opposite. 
+			Musculoskeletal pathology and pain can affect structural & postural 
+			balance and distortions. <br><br>Either way, these factors are critical to 
+			recovering and optimizing the health & function of the human body & mind of your clients. 
+			And while pain is very often an indicator of such “soft tissue issues,” at other times, 
+			their postural distortions are far MORE important than where the pain is. Sometimes, the pain distracts you
+			 from where your client’s problems really are.
+			<br><br>
+			In our Medical Massage Therapy & Myo–Structural Balancing School, 
+			we teach you how to distinguish the many, and sometimes 
+			little-known, differences in determining & treating what your
+			 client’s TRUE source of pain or dysfunction really is. 
+			 Our advanced medical massage training sets you apart from the “standard”
+			  training in most massage schools out there. Our Clinical / Medical Massage Therapy School
+			uses structure & posture as a core focus for your therapeutic education, 
+			helping you develop your strategy & tactics for recognizing, analyzing & treating such conditions.</h2>
+	</div>
+	<p></p>
+
+
+	<div id="tbox3" style="padding-bottom:80px;background-color:rgba(73,116,165);">
+		<div class="title" style="padding-bottom:80px;">
+			<br><br>
+			<h2 style="color:white;font-weight: bold;
+			font-family: 400 15px Inter,-apple-system,system-ui,Roboto,'Helvetica Neue',Arial,sans-serif;
+			font-size:55px !important;">Structural Balancing & Postural Evaluation</h2>
+			<br>
+			<h2 style="color:white;">Structural Balancing & Postural Evaluation
+				Structural Balancing refers to the overall analysis of the client’s personal “big picture.” 
+				It includes various elements of their health history, what kinds of exercise or stretching they do,
+				what accidents they’ve been in, and so on.
+				<br><br>
+				Postural Evaluation is a highly specific examination of where
+				their bones are in space, and relative to each other. This helps 
+				you understand which are the most over–shortened muscles. 
+				These are very often where a client holds the most tension, stress, 
+				and even trauma, and are usually the very first muscle(s) to address 
+				in a proper Myo–Structural Balancing Therapy Session.<br><br>
+				
+				The prefix “Myo” refers to the actual treatment of the muscle(s), 
+				which by traditional definition includes the MYO–FASCIA, 
+				to bring the client’s physical structure back into proper balance.
+				<br><br>
+				<a href="" style="color:white;font-weight: 500;text-decoration:underline;">Learn more about structural balancing <i class='fa fa-arrow-right' style="font-weight:100 !important;opacity:0.7" style="opacity:0.7"></i><a></h2>
+		</div>
+
+	
+		<div id="tbox3" class="headTop">
+			<div class="title">
+				<br><br>
+				<h2 style="margin:20px;color:#29345d;text-align:center;font-weight:400;
+				font-family: 'Open Sans', sans-serif;
+				font-size:70px !important;">You too can become an expert at relieving pain,
+					lost range of motion, weakness, and
+					many other dysfunctions by resolving
+					postural & structural imbalances
+				</h2>
+				<br><br>
+				<h2 style="margin:20px;color:#29345d;text-align:center;font-weight:400;
+				font-family: 'Open Sans', sans-serif;
+				font-size:70px !important;">*** DEMO ENDS HERE ***</h2>
+		
+					<h2>	
+					Our advanced approach to myo-structural bodywork and medical massage
+					 therapy at our school in Charlotte, NC includes addressing and eliminating
+					  postural distortions caused by muscular tension and myofascial imbalances. 
+					  We believe the body’s inefficient opposition to gravity can cause many forms 
+					  of musculoskeletal pain. You will discover how the body’s inefficient opposition 
+					  to gravity can cause musculoskeletal pain and many other problems people face on
+					a daily, hourly basis.
+					In other words, gravity forces the body’s weight to shift
+					 off the bones and onto the muscles. This shifting, altering, 
+					 and compensating often leads to the formation of local pain points, 
+					 trigger points (referral of pain to distant areas), 
+					 deviations (unevenness) in hip & leg lengths, distortions
+					  in the pelvis and spine (misalignments), depressed or elevated shoulder
+					   girdles, collapsed (stooped or slouched) upper body, forward neck & head
+					    positioning, and many other ailments.
+					Our objective is to have students focus on musculo-fascial units
+					 that are overly “locked short” from C.E.M.&.N.T.
+					  (Chronic, Excess, Muscle & Nerve Tension & Stress),
+					   specializing in resolving muscular imbalances linking
+					    poor posture, musculoskeletal pain, a wide variety of 
+						dysfunctions, and restriction of body movements. 
+						Yet sometimes, pain from other causes distorts the posture. 
+						Learning to SEE and understand these many factors sets YOU apart from other practitioners.
+					and, you will KNOW how to recognize those differences, and what to do about them.</h2>
+			    </div>
+			</div>
+
+		
+		<div id="tbox3">
+				<div class="title">
+					<h2>Hands-On, Clinical / Medical
+						Massage Therapy
+						Our unique approach to Skillful Resolution of Chronic Muscle Tension & Stress (AKA “tight muscles”) and the many problems it causes is the primary skill you’ll be developing at the North Carolina School of Advanced Bodywork.
+						
+						With the addition of this Clinical / Medical Massage Therapy School in Charlotte, North Carolina, the city regains the teachings of one of its early contributors to the enhancement of clinical and structural bodywork, Kyle C. Wright, LMBT
+						
+						Many of our Clients* over the years have been to many forms of therapy — including various kinds of massage and bodywork such as Rolfing®, neuromuscular, myofascial, deep tissue therapy, acupressure, etc. — searching for relief from a variety of soft tissue and musculoskeletal related problems.
+						
+						Yet they had not found sufficient or complete relief until they experienced our unique approach to soft–tissue therapy, brought to Charlotte (and Jacksonville, Florida, by Mr. Kyle C. Wright) in 1994 and further developed over the years since.
+						
+						* Client: One who is under the Protection of another.
+						
+						~ Webster’s Dictionary
+						
+						This skill — and the related knowledge — is what will set YOU apart from many, if not most, of the therapists out there today. We encourage our students to work at a higher standard of Professionalism and Interaction with their Clients.</h2>
+				</div>
+				<p></p>
+				<a href="#" class="button">Learn More</a> </div>	
+
+				<div id="tbox3">
+					<div class="title">
+						<h2>Mastering the Arts & Sciences of RESOLVING
+							Chronic Muscle Pain & Dysfunction:
+							From Relaxing Swedish Massage Therapy to
+							Complex Myo-Fascial & Myo-Structural Bodywork
+							and Medical Massage Therapy</h2>
+					</div>
+					<p></p>
+					<a href="#" class="button">Learn More</a> </div>
+					
+					
+						
+						<div id="tbox3">
+							<div class="title">
+								<table>Class Calendar: 2024 – 2025
+									CLASS:	START DATE:	END DATE:
+									Winter 2024	November 25, 2024	May 22, 2025
+									Spring 2025	March 3, 2025	August 21, 2025
+									Summer 2025	June 2, 2025	November 20, 2025
+									Fall 2025	August 25, 2025	March 5, 2026
+									Winter 2025	November 24, 2025	May 28, 2026
+									 </table>
+							</div>
+							<h2>Or Contact Us At:
+								admissions@ncsab.com
+								
+								PLEASE CALL — then Visit — the North Carolina School of Advanced Bodywork: a Clinical / Medical Massage Therapy & Myo-Structural Bodywork School in Charlotte, North Carolina
+								The beauty of our program is we are a small boutique–style school and you will graduate in the shortest period of time possible (24 or 48 weeks). Our focus is on YOU becoming a Clinical, Medical Soft Tissue Specialist in managing and resolving significant pain, posture, movement, and dysfunction issues for which many people have not yet found relief.</h2>
+							<p></p>
+							<a href="#" class="button">Learn More</a> </div>
+							
+							<div id="tbox3">
+								<div class="title"style="padding:0;margin:0 !important;">
+									<img src="/static/assets/img/Skyline.jpg" style="background-size:cover;opacity: 1.0;padding:0;margin:0 !important;" alt="alternatetext">
+									<p>Charlotte, NC The Queen City</p>
+								</div>
+								
+								<a href="#" class="button">Learn More</a> </div>
+								
+								<div id="tbox3">
+									<div class="title">
+										<h2>Why A Clinical / Medical Massage Therapy &
+											Myo-Structural Bodywork School?
+											. . . Because . . .
+											From CDC Weekly / April 14, 2023 … During 2021, an estimated 20.9% of U.S. adults (51.6 million persons)bhb inexperienced chronic pain, and 6.9% (17.1 million cc TV persons) experienced high-impact chronic pain (i.e., chronic pain that results in substantial restriction to daily activities)
+											Rikard SM, Strahan AE, Schmit KM, Guy GP Jr.. Chronic Pain Among Adults — United States, 2019–2021. MMWR Morb Mortal Wkly Rep 2023;72:379–385. DOI: http://dx.doi.org/10.15585/mmwr.mm7215a1.
+											
+											From NIH News Releases / May 16, 2023 … Overall, the study found that the rate of chronic pain and high-impact chronic pain (HICP) among adults is approximately 21% and 8%, respectively. Chronic pain is pain that is experienced on most days or every day in the past three months; and HICP is pain that limits life or work activities on most days or every day during the past three months. The links between the widespread burden of chronic pain and the country’s opioid epidemic underscore the urgency to understand and address the issue of pain.
+											https://www.nih.gov/news-events/news-releases/nih-study-finds-high-rates-persistent-chronic-pain-among-us-adults — Nahin RL, Feinberg T, Kapos FP, Terman GW. Estimated Rates of Incident and Persistent Chronic Pain Among US Adults, 2019-2020. JAMA Net 2023.
+											
+											You’ll want to position yourself as someone who can help resolve such issues as the CDC and NIH described in the above Quotes from their publications. The U.S. National Institute of Health (NIH) says this …
+											
+											“Based on the evidence, massage therapy, compared to no treatment,
+											should be strongly recommended as a pain management option.”
+											
+											https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4925170/
+											
+											In Our Highly Specialized Program, You’ll Soon Be Learning To Reduce or Resolve Such Problems Such As:
+											
+											Sciatica
+											Headaches
+											Low Back Pain
+											Plantar Fasciitis
+											Stooped Posture
+											Knee/Elbow Pain
+											TMJ Issues
+											Forward Head Posture
+											Thoracic Outlet Syndrome
+											Neck & Shoulder Pain
+											And Many More Chronic Pain Issues For Which Many Have Not Yet Found Relief.  
+											To SEE Our Page on Medical Research Studies, CLICK HERE
+											
+											FOR MORE INFORMATION
+											on our clinical/medical massage therapy school in
+											Charlotte, North Carolina, PLEASE CHECK OUT
+											the Details, Dates & Times of Our Classes…
+											
+											Click Here for DETAILS: Dates, Times & Tuition</h2>
+									</div>
+									<p></p>
+									<a href="#" class="button">Learn More</a> </div>
+									
+									<div id="tbox3">
+										<div class="title">
+											<h2>Career Fairs
+												Attend our quarterly Career Fairs provided for Students and all Licensed Massage and Bodywork Therapists. Meet local Employers looking for your skillset as a graduate of NCSAB  DAY CLASS: 12 PM to 1 PM and again for EVE CLASS 5:30 PM to 6:30 PM.
+												
+												Always on a THURSDAY:
+												
+												Dates in 2025:
+												Feb 6 — May 14 — Aug 14 — Nov 13</h2>
+										</div>
+										<p></p>
+										<a href="#" class="button">Learn More</a> </div>
+										
+										<div id="tbox3">
+											<div class="title">
+												<h2>This is YOUR PATH to a Highly Rewarding Career
+													— Personally, Professionally, Financially —
+													In a fast-growing, high-demand profession, in ONLY 24 Weeks!
+													No expensive, time-consuming degree or
+													pre-requisites are necessary
+													
+													Full-Time (24 weeks) or Part-Time (48 weeks),
+													Day or Evening Classes Available …
+													with Flexible In-House Payment Options
+													Proudly Graduate from North Carolina School of
+													Advanced Bodywork WITHOUT the
+													Burden of a Government or Student Loan!
+													
+													Eligible for Veteran’s Benefits
+													Flexible Payment Options:
+													Total Tuition, Books/Supplies: $9,000
+													
+													Please See Tuition & Fees Details on THIS PAGE
+													Four Class Starts Per Year — 2025
+
+													March 3 — June 2 — Aug 25 — Nov 24
+												
+												</h2>
+											</div>
+											<p></p>
+											<a href="#" class="button">Learn More</a> </div>
+
+											<div id="tbox3">
+												<div class="title">
+													<h2>
+														You Will Become A Specialist in Reducing …
+C.E.M.&.N.T.
+(Chronic, Excess Muscle & Nerve Tension & Stress)
+As David Scott Lynn puts it, we have found many of the seemingly unresolvable problems people face to be the result of C.E.M.&.N.T. — or Chronic, Excess Muscle & Nerve Tension & Stress — or its less precise medical term, hypertonicity.
+
+Or, Just “Tight Muscles.”
+
+This is an almost unrecognized source of trouble for large numbers of people, and few healthcare professionals or therapists have mastered the techniques, strategies, and subtleties needed to recognize, manage, or resolve this widely pervasive cause of many common problems.
+
+Because the ability to contract and relax muscles is, obviously, necessary to almost ALL our bodily functions on a daily basis, few recognize contracted muscles as a “problem.” The problem with that is that while everyone is pretty good at contracting their muscles, very few know how to truly DE–Contract, or fully Relax their muscles.
+
+Chronically Contracted & Over–Shortened Muscles become our Primary Focus for resolving many of the clinical, soft tissue issues therapists regularly encounter in their practices.
+
+Many muscles are excessively contracted; yet they are at the same time, paradoxically, overly lengthened. Too many therapists think the over-lengthened muscles are “Too Weak.” While this often FEELS or APPEARS correct, this is rarely the case. Allegedly “weak” muscles are not that common and lead to great misunderstandings on how to do therapy. Understanding the strategy & tactics necessary to evaluate and treat such “weak / strong” muscles versus “short / long” muscle paradoxes is central to the Medical Massage Therapy & Myo–Structural Balancing Process you’ll learn at NCSAB.
+
+Along those lines, a well-functioning human body wanting Precise, Effective & Efficient Action must be able to RELAX or DE–Contract its muscles just as easily as they contract them. The balance between musculo-fascial contraction & relaxation must be VERY close to equally balanced.
+
+Massage & Bodywork, along with Conscious Stretching, and other related modalities, are excellent ways to support your Clients in achieving far deeper levels of relaxation — of Muscular De–Contraction — than they’ve ever experienced.
+													</h2>
+													<h3>I am a therapist and I own my own practice in Ponte Vedra Beach, Florida. I get to help change and improve people’s lives on a daily basis. It’s the most satisfying and rewarding way I could ever hope to make a living. Graduating from one of Kyle’s former schools made all these opportunities possible. It really did change my life.
+
+														~ Chad Jasmine, LMT, NCTMB Ponte Vedra Beach, FL</h3>
+												</div>
+												<p></p>
+												<a href="#" class="button">Learn More</a> </div>	
+												
+												<div id="tbox3">
+													<div class="title">
+														<h2>
+															THIS Is Your Unique Opportunity At A Clinical / Medical Massage Therapy School in Charlotte, NC
+Some Problems Causing, Or Closely Related To,
+Chronic, Excess Muscle & Nerve Tension:
+Principles of Therapy - working the muscles of the shoulder bladeImbalances between muscle groups
+Poor posture & stooping
+Faulty movement patterns
+Pressure on and irritation of nerves
+Trigger Points & referred pain
+Myofascial pain syndromes
+Disc related problems
+Sports-related injuries
+Faulty ergonomics
+General & Specific chronic pain
+Many problems of aging
+Scoliosis and kyphosis
+And that’s just a short list. … To be honest, we’re often amazed, though now rarely surprised, by how many symptoms our Clients experience caused by excess muscle tension.
+														</h2>
+													</div>
+													<p></p>
+													<a href="#" class="button">Learn More</a> </div>
+
+													<div id="tbox3">
+														<div class="title">
+															<h2>
+																So Much In So Little Time?
+Now, HOW can we give you what amounts to an Advanced Education in only 500 hours when other massage therapy schools offer more hours for a more spa–style or general relaxation–based training, a less overtly therapeutic training?
+
+All massage schools, including NCSAB, will give full training in Swedish Massage. It’s what we all do afterward that makes each school different.
+
+The path WE chose is a more overtly clinical & medical approach to pain & dysfunction management.
+
+We can provide the education you need to be an excellent practitioner of Therapeutic Swedish Massage, while at the same time teaching you how to achieve higher levels of therapeutic skill through our advanced training in Clinical / Medical Massage Therapy and Myo–Structural Bodywork.
+
+Regardless of which method — Swedish versus Clinical / Medical — you choose to emphasize in your own practice, you’ll be far more competent in helping your Clients or Patients with their musculoskeletal and soft tissue issues.
+
+How Can We Do This?
+
+We focus on THE ESSENTIALS, without the “stuff” or “fluff” that does not matter.
+
+With well over 35 years of clinical practice and teaching medical massage therapy, Kyle Wright and his seasoned staff (with over 50 years combined experience) have developed and continuously refined the process of teaching this material to a high art.
+
+The training curriculum has been precisely thought out and sequenced allowing the material to be delivered in the most efficient and effective way possible. This efficiency combined with a small, high–caliber group of students, allows us to teach you far more than the basic requirements in a shorter time.
+
+If you are already convinced the North Carolina School of Advanced Bodywork might be The Place For You, contact our school to hold your place today. Classes are small, so don’t delay.
+
+Participate in a Kinesiology Class any Wednesday. Just show up at 9 AM for the day class or by 6 PM for an evening class.
+
+Once we have determined we are a good fit, we may offer you our application and will walk you through the enrollment process.
+
+Sean lecturing on Structural Anatomy for medical massage therapy: Florida School of Advanced Bodywork
+Sean Ivan — Director of the Florida SAB
+Click Here for DETAILS: Dates, Times & Tuition
+															</h2>
+															<h3>My association with Kyle Wright began many years ago. He has treated me for various muscular symptoms which have helped me with my game tremendously. His knowledge of the muscular and skeletal systems of the body has given me an insight on how sports and muscle injuries interact and the subsequent treatment plan needed to alleviate the underlying cause. Kyle has a warm disposition and a keen dedication to the work he believes in. I wish him much success in the years to come.
+
+																Vijay Singh, Professional Golfer #1 Ranked Golfer in the World 2004, 2005 Three Time Majors Champion</h3>
+														</div>
+														<p></p>
+														<a href="#" class="button">Learn More</a> </div>
+
+														<div id="tbox3">
+															<div class="title">
+																<h2>
+																	In Your Foundational Program In A Specialized Clinical / Medical
+Massage Therapy School in Charlotte, North Carolina . . .
+You’ll Be Learning these Elements of a Successful
+Clinical / Medical Massage Therapy Practice:
+How to assess posture as a clue to what’s wrong
+Evaluating movement patterns and walking
+How to find the TRUE source of most people’s neuro–musculo–fascial problems
+What is “The Edge” and why NO Pain Means MORE Gain
+Why light or moderate pressure is OFTEN (but not always) better than deep pressure
+Precise & Effective Hand Placements for Treating Soft Tissue Issues
+The True Nature of Fluid Movement, and how to achieve it
+The Truth about how to achieve Effortless Great Posture
+Why Relaxed & Lengthened Abdominal Muscles are stronger than tight & contracted ABs
+How to protect and maintain your own body utilizing proper Body Mechanics
+Your BIG BONUS:
+You’ll Be Giving and Receiving Massage and Bodywork Each Week. …
+Be More Relaxed Than You’ve Ever Been (or at least in a very long time)
+Supervised Massage Sessions at Clinical / Medical Massage Therapy School in Charlotte, North Carolina
+Receiving Your OWN Massage Therapy Sessions!
+
+One of your perks for getting educated in massage and bodywork therapy is giving and receiving approximately three to four hours of therapy per week, every week, in supervised trades with fellow students.
+
+That alone is, we think, worth the price of admission to your new Clinical / Medical Massage Therapy School. Just learning about how to relax your own muscles is a revelation and relief for many people.
+
+an objective of our medical massage therapy and structural bodywork school is deep relaxation as in this photo of a deeply relaxed kitty
+A VERY Deeply Relaxed Kitty!
+
+As we teach you to help others relax their chronic muscle tensions, you’ll find yours starting to disappear, too. And you’ll have the opportunity to learn many other ways of dealing with muscle and nerve tension often causing a person’s aches & pains.
+
+The reality is, there is an ART of Relaxation, and the more you know how to do it for yourself, the more you can help others achieve the deep relaxation their muscles need as well.
+
+
+																</h2>
+															</div>
+															<p></p>
+															<a href="#" class="button">Learn More</a> </div>
+
+															<div id="tbox3">
+																<div class="title">
+																	<h2>
+																		A Life-Changing Experience Awaits You at the North Carolina School of Advanced Bodywork
+A Whole Health Perspective
+For lots of students, their massage education is a life-changing experience. Because of the simultaneous inward and outward focus, and getting to know other human beings at a more intimate, wholistic level, your sense of what’s possible in Personal Human Interaction AND the Big Picture Of Life expands dramatically.
+
+Like many students before you, your career will flourish with the deep satisfaction of helping people at levels as only massage and bodywork therapy can, getting clients out of pain or other problems of posture, movement, and dysfunction.
+
+If you decide this is the direction for you, or just want to discuss the possibilities for You, please contact us and schedule a visit. If you can’t make it here right now, then we’ll set up a time to talk on the phone. Either way, please pick up your phone — Right Now — and …
+
+Call Us At (980) 224-8449
+
+Our NEXT 500-Hour Professional Class STARTS:
+Monday, March 3, 2025
+Enroll Today! Call to Learn about Becoming a Member
+of our Elite Group of Bodywork Professionals.
+
+Catalog for SAB - Clinical / Medical Massage Therapy School in Charlotte, North Carolina
+
+ Here for DETAILS: Dates, Times & Tuition
+																	</h2>
+																	<h3>The instructors here are among the best in the industry. I couldn’t imagine a greater opportunity to get a stellar education in this industry.
+
+																		~ Gina Canzano</h3>
+																</div>
+																<p></p>
+																<a href="#" class="button">Learn More</a> </div>
+
+																<div id="tbox3">
+																	<div class="title">
+																		<h2>
+																			Living On The Leading Edge of Advanced Bodywork & Life Itself!
+As you get to know us, you’ll understand more about The Edge. It is a central key to providing great bodywork for people and managing many of the aspects of your own life and self.
+
+Finger Pressure on Rectus Abdominus - Clinical / Medical Massage Therapy School in Charlotte, North Carolina
+Working with THE EDGE, “Deep” Tissue Therapy Does NOT, Should Not, Be Painful!
+
+The short story is that too many people think that “deep tissue” therapy has to be painful for it to work. On the other hand, there are massage therapists who seldom or never work deep enough.
+
+But the best results come when your Client is within their own optimal levels of sensation, on the “Edges” of pain, meaning they LIKE (or are very neutral about) what they’re feeling, and not having to tolerate the pressure you are applying to their muscles and fascia.
+
+One of our Mottos is “It’s easier to open the door before you walk through it … and You can’t peel an onion from the inside out.”
+
+Because we start well within the Client’s comfort levels, and have them let us know when we’re getting too deep, or too intense, they develop a deep trust that we will not hurt them, allowing them to relax even more. Each thin layer of muscle — each layer of musculo/fascia is a doorway to the next layer — is relaxed, well within the Client’s comfort zone. This allows us to sink through each layer without causing pain, stress or resistance for the Client. We want them to INVITE what we’re doing, not FIGHT what we’re doing. Since we NEVER, or seldom, intentionally cause them pain from the therapy itself, they can, and do, relax far more deeply. When they DO feel pain, they KNOW and TRUST we will back off instantly, and they become far more cooperative and interactive in their therapeutic process. In this way, we very often end up working MUCH DEEPER than the “Deep Tissue” or other  more aggressive therapists. And we can stay in the deeper tissues longer, getting more done, finding more “hot spots,” more effectively and efficiently than other methods.
+
+Working with The Edge keeps You, the therapist, and your Client, more fully focused on their internal relaxation and tension release process, rather than distracted by dealing with or resisting pain, as a result making deeper neurological connections, increasing the effectiveness, efficiency, and results of the therapy you provide for them.
+
+They VERY soon KNOW the difference between YOU and other therapists. And YOU will learn to provide those differences at your Clinical / Medical Massage Therapy School in Charlotte, NC.
+
+Like much of what you’ll be learning with us, there’s A LOT more to it than the above simple descriptions. Yes, our technique treats the deep tissues. Many say we go deeper than most.
+
+Yet in many cases, the “Trick” is to let the skin and surface tissues “release” first, THEN go deeper, thin layer by thin layer (like working through the layers of an onion) of musculo–fascial tissue, allowing the No Pain, MORE Gain process to work. You’ll learn to deliver deeper bodywork with no significant levels of pain necessarily involved.
+
+Our entry-level program at our medical massage therapy school gives you all the tools you need to be a VERY successful practitioner with these methods.
+																		</h2>
+																		<h3>In almost twenty years of practice and who knows how many continuing education courses I have taken, there have been two styles that have defined how I practice. The work I learned from Kyle – “Playing The Edge,” neuromuscular, and structural rebalancing and so much more. His training has lead to my career working with neurologists, neurosurgeons, Ob/GYN, and pain specialists and has been especially influential in shaping my role in rehabilitation. Thank you for your amazing gifts.
+
+																			~ Joe Durant, LMT Brunswick, Georgia</h3>
+																	</div>
+																	<p></p>
+																	<a href="#" class="button">Learn More</a> </div>
+
+																	<div id="tbox3">
+																		<div class="title">
+																			<h2>
+																				NCSAB will provide you with the Leading Edge Training and hands-on skills not available nearly anywhere else. NCSAB brings you many state-of-the-art perspectives & techniques for more effective therapy.
+
+There is always going to be a Client with a new and different problem that’s unique and challenging. As you get better and more experienced, more of them will come your way. And so will your opportunities to expand your knowledge and improve your skills.
+
+Your Instructors at NCSAB are forward-thinking, innovative, highly experienced professionals with proven, decades-long track records in the treatment room, resolving a wide range of myofascial and neuro–structural pain and dysfunction.
+
+Your Training will equip you with skills, knowledge, and insights leading to employment working in a variety of healthcare settings.
+																			</h2>
+																		</div>
+																		<p></p>
+																		<a href="#" class="button">Learn More</a> </div>
+
+																		<div id="tbox3">
+																			<div class="title">
+																				<h2>
+																					What, Exactly, Will You Be Able To Do When You’ve Graduated?
+Well, it’s a wide-open field, ripe for innovation and creativity.
+
+One huge market opening up is the Baby Boomers who have started retiring in large numbers. They are one of the most health-conscious groups of people we’ve ever seen.
+
+Another opportunity is working with physicians who understand the value of soft tissue therapy treatments for many of their patients’ painful afflictions difficult to treat by other means. (Although many physicians will need you to give them an education on how it all works. We’ll prepare you for those interactions.)
+
+I have referred many patients to Mr. Kyle Wright, LMT, NCTMB, for clinical neuromuscular and structural bodywork. These have been my patients with soft tissue dysfunction, generally secondary to trauma. My experience has been positive, in that the patients involved have increased range of motion of the affected areas and have a decrease in their complaints of pain.
+
+I have found this type of therapy to be a very useful modality in the treatment of soft tissue disorders. I have found Mr. Kyle Wright to be an articulate and competent therapist.
+
+~ Ronald W. Dennie, M.D. Physical Medicine and Rehabilitation
+
+Another market is athletes and sports enthusiasts. Most of us have heard about top athletes who consider some form of massage or bodywork as vital to their professional success and injury prevention.
+
+Kyle Wright personally worked with a number of world-class, professional athletes who’ve been extremely appreciative of the benefits our approach to therapy provided them.
+
+But please bear in mind that if I was using techniques most therapists use, and that I used in my early days as a therapist, I most likely would not have gotten the level of results I did with many of my Clients. I firmly believe you’ll be hard pressed to find this approach in many places in America. ~Kyle Wright
+
+Unfortunately, we cannot guarantee how well you will do as a professional massage and bodywork therapist. Only You can determine how dedicated and hard-working you’ll be. It takes diligent, consistent work to get started, find Clients, and build a practice.
+
+Yet in truth, you’re only limited by your imagination and willingness to work hard & smart, along with the quality of your training. And of course, if you go into private practice, like any other business, you’ll need to develop your marketing & networking skills, and we will help get you started on that.
+																				</h2>
+																			</div>
+																			<p></p>
+																			<a href="#" class="button">Learn More</a> </div>
+
+																			<div id="tbox3">
+																				<div class="title">
+																					<h2>
+																						Become A Self–Employed, Private Practitioner OR A High–Value,
+In–Demand Employee By Attending Our Clinical  / Medical Massage
+Therapy & Bodywork School in Charlotte, North Carolina
+One common choice of graduates is to develop a Self-Employed, Private Practice. With the right training and personal motivation to get the word out to potential Clients, this option affords you:
+
+High career satisfaction
+Setting your own hours
+Helping people on a daily basis
+Contributing to society
+Low–stress environment
+Choosing Who YOU want to work with as Clients 
+Design your life the way you want it
+Alternatively, you can work in a wide range of employment opportunities:
+
+with Physicians (medical, chiropractic, osteopathic, naturopathic) employing  massage therapists
+in Health Care and Rehabilitation Facilities
+in Health & Athletic Clubs
+in Spas & Resorts
+on Cruise Ships
+Become a Well–Respected Instructor of Massage Therapy
+For you to take advantage of these opportunities, we truly believe the North Carolina School of Advanced Bodywork, Inc. is a unique school specializing in providing you with the most advanced clinical / medical massage therapy training available in the country.
+
+Video Player
+
+																					</h2>
+																					<h3>Over many years Kyle Wright has brought Neuromuscular Therapy into my office. Through his knowledge and clinical experience, he has been an integral part in the assistance of correcting neuromuscular skeletal dysfunctions. This soft tissue work that has been used as an adjunct to spinal manipulation, works hand in hand to assist the patients through the biomechanics of reversing their conditions. …
+
+																						Neuromuscular Therapy, particularly through Mr. Wright, is a great asset and brings a new dimension to my practice and the healthcare field.
+																						
+																						~ Dr. Joseph J. Altomare, D.C. Chiropractic Physician</h3>
+																				</div>
+																				<p></p>
+																				<a href="#" class="button">Learn More</a> </div>
+
+																				<div id="tbox3">
+																					<div class="title">
+																						<h2>
+																							Passing the MBLEx, the North Carolina Licensing Exam
+An important criterion in determining the school giving you the best education is the pass rate on the Massage and Bodywork Licensing Exam (MBLEx). We maintained a 85% pass rate over 5 years. Most states require a passing grade on this test to qualify for licensure, which affords you the privilege to practice in that state. It is offered at testing centers all over the country including 3 in the Charlotte area.
+
+Your NCSAB instructors are highly experienced practitioners and are living and breathing experts and specialists in soft tissue therapeutics.
+
+Even if you have no background in massage therapy, our staff will take you step-by-step through the process of learning the basics. Upon graduation, you’ll understand and be competent and efficient in treating the most common soft tissue pathologies experienced by the vast majority of Clients.
+
+If you are already convinced we might be The Place for You, get in touch with us at the North Carolina School of Advanced Bodywork …
+
+You’ll be VERY glad you did!
+																						</h2>
+																					</div>
+																					<p></p>
+																					<a href="#" class="button">Learn More</a> </div>
+
+																					<div id="tbox3">
+																						<div class="title">
+																							<h2>
+																								Our State–of–the–Art Textbook
+Textbook authored by Kyle Wright used at Clinical / Medical Massage Therapy School in Charlotte, North CarolinaKyle Wright’s textbook, STRUCTURAL BALANCING: A CLINICAL APPROACH, co-authored by David Scott Lynn and published by McGraw-Hill Publishing, is the primary textbook used for our Functional Anatomy & Clinical Bodywork curriculum.
+
+This clinical textbook was written for massage therapy students as well as physical therapy and chiropractic students. …
+
+You can now order this forward-thinking clinical manual by clicking on the McGraw-Hill direct ordering website link below:
+
+Structural Balancing: A Clinical Approach
+Available for purchase on campus for $75 (included in books/supplies fee when enrolled)
+
+A NOTE from Kyle:
+
+“I have to give due credit to one of MY most influential teachers, David Scott Lynn. He contributed three chapters on the physiology & philosophy of bodywork and other materials to the completely revised and professionally published version of my 380-page textbook, Structural Balancing: A Clinical Approach.
+
+“Many of the concepts I teach, and you will be learning, at NCSAB, I learned from David in one of his DSL Method series of workshops for bodyworkers in the early 1990s. …
+
+“This is among the Leading Edge material I’ll be incorporating and teaching you. It includes both Therapeutic Yoga and Hands–On, Myo–Structural Bodywork.”
+
+~ Kyle C. Wright
+																							</h2>
+																							<h3>Here are just three testimonials about David’s work:
+
+																								Application of these Teachings will take Yoga to new heights in the Western World. The DSL Method is profoundly sensible.
+																								
+																								Leslie Hunter Yoga Teacher Sedona, Arizona
+																								
+																								Having had experience with many different bodyworkers, David’s [DSL Method] technique is certainly unique. There are levels of healing he achieves I’ve never seen before. This is clearly a result of a vast knowledge of anatomy and physiology combined with decades of hands–on experience.
+																								
+																								Dr. John Bordiuk, M.D. Nutritionally Oriented M.D. & Yoga Teacher Marino Center • Wellesley, Massachusetts
+																								
+																								I have worked with many soft tissue therapists over the years. David Scott Lynn is the only one educated and skilled enough to do what I want with full confidence that the job will be done. My patients definitely feel the difference. [Of course, Dr. Gary never met Kyle Wright!]
+																								
+																								Gary Fujinami, D.C. Doctor of Chiropractic East West Chiropractic & Acupuncture Center Prescott, Arizona</h3>
+																						</div>
+																						<p>We also offer several Continuing Education Seminars and Workshops on topics like:
+
+																							Advanced Structural Analysis (understand physics & geometry of the body)
+																							Advanced Structural Balancing Strategies
+																							Advanced concepts and techniques in manual therapy
+																							Yoga Therapeutics and Yoga Injury Prevention
+																							Principles of Tai Chi/Chi Kung movement & exercise
+																							Philosophy, Psychology & Science of Being Human
+																							Self-Care Techniques for Injury Prevention and Repair
+																							And much, much more
+																							Well, that about wraps up what we have to tell you … for now. But as you can guess, our staff have MANY more things to tell you and show you.
+																							Let’s see what we can do to help YOU establish yourself as a Leading Edge Practitioner in Myo–Structural Bodywork and Clinical / Medical Massage Therapy in Charlotte, North Carolina.
+
+																							Kyle previously taught classes with 50 to 60 students at a time, and everyone got what they needed. At this time, to maintain a higher level of personal interaction, we are only accepting 20 students per class, in a small boutique environment, so please start the process right now.
+																						</p>
+																						<a href="#" class="button">Learn More</a> </div>
+
+																						<div id="tbox3">
+																							<div class="title">
+																								<h2>
+																									The North Carolina School of Advanced
+Bodywork Teaching Staff …
+has decades of experience in the massage and bodywork profession,
+both in practice and instruction.
+Although there are many naturally gifted teachers out there, practical experience is a major plus when teaching certain important aspects of massage therapy. That means instructors with significant experience working with clients with chronic pain and dysfunction.
+
+Be sure you check into that when you are examining different massage therapy schools.
+
+Discover Your Pathway to Competency & Status as a
+Medical Massage & Myo-Structural Bodywork Therapist
+Small Class Sizes, Individualized for Superior Education
+
+Classroom at NCSAB Medical Massage Theary School in Charlotte, NC
+NCSAB Classroom
+
+North Carolina School of Advanced Bodywork, a Clinical / Medical Massage Therapy School is licensed and approved by the North Carolina Board of Massage and Bodywork Therapy.
+
+We offer a 500-Hour Program meeting the required hours by the North Carolina Board to obtain your License (LMBT) to practice as a Licensed Massage and Bodywork Therapist in the State of North Carolina.
+And you’ll be prepared for the Massage and Bodywork Licensing Exam (MBLEx) after graduation which is required to obtain a license in NC and 46 other states.
+																								</h2>
+																							</div>
+																							<p></p>
+																							<a href="#" class="button">Learn More</a> </div>
+
+																							<div id="tbox3">
+																								<div class="title">
+																									<h2>
+																										What Are You Waiting For? Enroll Today!
+Our Next 500-Hour Professional Massage and Bodywork Therapy Program Begins:
+Monday, March 3, 2025
+
+(980) 224-8449
+
+Or Contact Us At: admissions@ncsab.com
+
+Attend our quarterly Career Fairs open to Students and all Massage and Bodywork Therapists Meet Local Employers that will hold your skillset in high demand.
+
+DAY CLASS: 12 PM to 1 PM and again for EVENING CLASS 5:30 PM to 6:30 PM
+
+Always on a THURSDAY:
+
+Dates in 2025:
+Feb 13 — May 22 — Aug 14 — Nov 13
+
+Full Time (25 weeks) or Part-time (50 weeks), Day or Evening Classes Available
+Four Class Starts Per Year — 2025
+
+March 3 — June 2 — Aug 25 — Nov 24
+																									</h2>
+																								</div>
+																								<p></p>
+																								<a href="#" class="button">Learn More</a> </div>
+
+																								<div id="tbox3">
+																									<div class="title">
+																										<h2>
+																											A Message From Kyle Wright,
+Founder & Developer of:
+Florida and North Carolina Schools of Advanced Bodywork: Clinical / Medical Massage & Bodywork Therapy Schools offering:
+
+500–Hour Professional Massage & Bodywork Therapy
+“It’s always nice to see when therapists quiet their minds and quiet their hands; the recipient of the bodywork goes to a deep level of the parasympathetic state, which allows for a deeper level of entry into the musculo–fascial layers of the body. When the recipient experiences no fear, resistance, guarding and armoring and no pain during their session, their muscles are more able to achieve relaxation and longer–lasting results.” ~Kyle Wright
+
+ 
+
+Video Player
+
+00:00
+02:57
+
+
+— Watch Full Screen —
+(Screen Size Button is in Lower Right Corner of Video)
+“After you get to know my work a little better, we can talk about your concerns and ambitions. We can help you decide if medical massage therapy and myo–structural bodywork is the right profession for You, and whether North Carolina SAB is the place for you to learn.”
+
+~Kyle C. Wright, LMBT
+
+Read More About Kyle Wright, the Founder, HERE
+
+Over the past six years, I have had the privilege of working with a number of graduates of [Kyle Wright’s schools of Clinical Massage Therapy]. I am engaged in a pain management practice and have found the technical support people who are graduates [of Kyle’s schools] to be exceptionally well trained and of immeasurable help in an integrated pain management program. They have an excellent knowledge of Anatomy and Physiology and their training in Neuromuscular Therapy is very beneficial to my patients who undergo a comprehensive therapy program following injury.
+
+Sanford Z. Pollack, D.O. President Elect, American College of Osteopathic Pain Management & Sclerotherapy; Fellow, American Academy of Disability Evaluating Physicians; Diplomate, American Academy of Pain Management; Board Certified, Family Medicine; Member, American Association of Orthopedic Medicine
+																										</h2>
+																									</div>
+																									<p></p>
+																									<a href="#" class="button">Learn More</a> </div>
+
+																									<div id="tbox3">
+																										<div class="title">
+																											<h2>
+																												Click Below for Details on: 500-Hour Program | Class Schedules | Course Materials | Tuition
+
+Find out more about our 500-hour Program at our Clinical /
+Medical Massage Therapy School in Charlotte, North Carolina.
+
+We look forward to hearing from you SOON!
+
+Yours Truly, Sarah Jones, Director — admissions@ncsab.com
+
+Kyle C. Wright, LMBT, Founder — kyle@ncsab.com
+
+Train to become a Member of an Elite Group of Medical
+Massage Therapy & Bodywork Professionals
+DON’T WAIT! …
+CONTACT US TODAY & GET STARTED
+
+820 Tyvola Road Suite 203 Charlotte, NC 28217
+(980) 224-8449
+Email:admissions@ncsab.com
+																											</h2>
+																										</div>
+																										<p></p>
+																										<a href="#" class="button">Learn More</a> </div>
+
+																										<div id="tbox3">
+																											<div class="title">
+																												<h2>
+																												</h2>
+																											</div>
+																											<p></p>
+																											<a href="#" class="button">Learn More</a> </div>
+
+</div>
+	<div id="portfolio" class="container">
+		<div class="column1">
+			<div class="box">
+			  <h3></h3>
+				<p></p>
+		  <a href="#" class="button button-small">Learn More</a> </div>
+		</div>
+		<div class="column2">
+			<div class="box">
+			  <h3>Content5</h3>
+				<p></p>
+		  <a href="#" class="button button-small">Learn More</a> </div>
+		</div>
+		<div class="column3">
+			<div class="box">
+			  <h3>Content6</h3>
+				<p></p>
+		  <a href="#" class="button button-small">Learn More</a> </div>
+		</div>
+		<div class="column4">
+			<div class="box">
+			  <h3>Content7</h3>
+				<p></p>
+		  <a href="#" class="button button-small">Learn More</a> </div>
+		</div>
+	</div>
+</div>
+<a href="#header-wrapper" class="top" id="top"><i class='fa fa-arrow-up' style="opacity:0.7"></i></a>
+<section id="contact" style="background-size: cover !important;background-color:#7FB8FB;border: none!important;padding: 0 !important;margin: 0 !important;">
+  
+	<div id="container" style="border:none;background-size: cover !important;width:100% !important">
+		<h1 style="margin-top: 20px!important;color:white;">Contact Form</h1>
+		
+		<form action="#" method="post" id="contact_form" style="box-shadow: none!important;">
+		  <div class="name">
+			<label for="name"></label>
+			<input style="box-shadow: none!important;"type="text" placeholder="My name is" name="name" id="name_input" required>
+		  </div>
+		  <div class="email">
+			<label for="email"></label>
+			<input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+		  </div>
+		  <div class="telephone">
+			<label for="name"></label>
+			<input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+		  </div>
+		  <div class="subject">
+			<label for="subject"></label>
+			<select placeholder="Subject line" name="subject" id="subject_input" required>
+			  <option  disabled hidpden selected>Subject line</option>
+			  <option>I'd like to start a project</option>
+			  <option>I'd like to ask a question</option>
+			  <option>I'd like to make a proposal</option>
+			</select>
+		  </div>
+		  <div class="message">
+			<label for="message"></label>
+			<textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
+		  </div>
+		  <div class="submit" style="color:white;">
+			<input type="submit" value="Submit" id="form_button" style="border-radius: 20px;" />
+		  </div>
+		</form><!-- // End form -->
+	  </div><!-- // End #container -->
+	
+  </section>  
+	
+	
+
+  
+</body>
+{% include "includes/footer.html" %}
+
+{% include "includes/scripts.html" %}
+
+</html>
+
+    
+<style>
+	
+
+	@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html {
+	font-family: 'Open Sans', sans-serif !important;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  
+  -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+	
+	max-width: 100vw!important;
+  overflow-x: hidden;
+  scroll-behavior: smooth !important;
+}
+
+
+body {
+  background: #f8f9fc;
+  scroll-behavior: smooth !important;
+  font-family: 'Open Sans', sans-serif !important; 
+  margin:0 !important;
+  
+}
+a{
+	cursor: pointer;
+	
+}
+.top {
+  --offset: 60px; 
+  
+  position: fixed !important;
+  bottom: 20px;      
+  margin-left:88%; 
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+  float:right !important;
+  
+  /* visual styling */
+  text-decoration: none;
+  padding: 10px;
+  opacity: 0.7;
+  color: #404040;
+  background: transparent;
+  white-space: nowrap;
+  font-size: 80px;
+}
+h2{
+	line-height:66px !important;
+	font-size: 38px !important;
+}
+.headTop{
+	background-color:	rgba(248,249,252,1);
+	margin-top: -40px;
+	padding-bottom:-60px;
+}
+.arrow {
+  border: solid #3498DB !important;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.right {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+.slabo-13px-regular {
+  font-family: "Slabo 13px", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.blueText{
+	color: #0c0c6e !important;
+	font-weight: bold;
+}
+.redText{
+	color:#981d1d !important;
+}
+.cent{
+	text-align: center;
+}
+.dropdown{
+	visibility: visible !important;
+}
+.show{
+	visibility: visible !important;
+}
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  height:5px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+form{
+	
+	border-radius: 20px;
+	max-width: 100vw;
+  overflow-x: hidden;
+}
+.waves {
+  position: relative;
+  width: 100%;
+  height: 16vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.waves.waves-sm {
+  height: 50px;
+  min-height: 50px;
+}
+
+.wave-rotate {
+  transform: rotate(180deg);
+}
+
+/* Animation for the waves */
+.moving-waves>use {
+  animation: move-forever 40s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.moving-waves>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 11s;
+}
+
+.moving-waves>use:nth-child(2) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.moving-waves>use:nth-child(3) {
+  animation-delay: -3s;
+  animation-duration: 15s;
+}
+
+.moving-waves>use:nth-child(4) {
+  animation-delay: -4s;
+  animation-duration: 20s;
+}
+
+.moving-waves>use:nth-child(5) {
+  animation-delay: -4s;
+  animation-duration: 25s;
+}
+
+.moving-waves>use:nth-child(6) {
+  animation-delay: -3s;
+  animation-duration: 30s;
+}
+
+button {
+  overflow: hidden;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, select, textarea {
+  
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  border: solid 5px white;
+  max-width: 100%;
+  margin: 60px auto;
+  position: relative;
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+h1 {
+  
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  fill: #4092f0;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.email {
+	float: right;
+	width: 45%;
+	color:#272925;
+
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border-bottom: solid 5px white;
+  border-left: solid 2px transparent;
+  border-right: solid 2px transparent;
+  border-top: solid 2px transparent;
+  box-shadow: none;
+  border-radius: none;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	outline: none;
+	color:#272925;
+}
+
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+	color:white!important;
+}
+
+.message {
+	float: none;
+	
+}
+
+.name {
+	float: left;
+	width: 45%;
+	
+}
+
+select {
+  
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+  color:#272925;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color:#272925;
+}
+
+:-moz-placeholder { 
+	color:#272925;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color:#272925;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color:#272925;
+}
+
+#form_button {
+  background: none;
+  border: solid 5px white;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background:#4092f0;
+  color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+  
+  .underline {
+    width: 68px;
+  }
+  
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+  
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+  
+  .underline {
+    width: 53px;
+  }
+  
+  input[type='text'], [type='email'], select, textarea {
+    font-size: 0.875em;
+  }
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .direct-contact-container, .form-horizontal {
+    margin: 0 auto;
+  }  
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }    
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+
+  .direct-contact-container, .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }  
+  .form-control, textarea {
+    
+    margin: 0 auto;
+  }
+ 
+  
+  .name, .email, textarea {
+    width: 280px;
+  } 
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }  
+  .social-media-list {
+    left: 0;
+  }
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+  
+}
+
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
+  }
+}
+@media (any-pointer: fine) {
+
+	html, body
+	{
+		height: 100%;
+	}
+	
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #f2f5f7;
+		font-family: 'Questrial', sans-serif;
+		font-size: 17px;
+		
+	}
+	.top {
+  --offset: 60px; 
+  
+  position: fixed !important;
+  bottom: 20px;      
+  margin-left:92%; 
+  place-self: end;
+  margin-top: calc(100vh + var(--offset));
+  float:right !important;
+
+  /* visual styling */
+  text-decoration: none;
+  padding: 10px;
+  opacity: 0.7;
+  color: #404040;
+  background: transparent;
+  white-space: nowrap;
+  font-size: 80px;
+}
+	.weight{
+		font-weight: 100 !important;
+	}
+	#logo{
+		margin-top: -3%;
+		margin-bottom: -1%;
+	}
+	#address{
+		font-size:20px;
+		margin-top:20px;
+		margin-right: 5px;
+		padding-right: 5px;
+		margin-left: -30px;
+	}
+	#contacticons{
+		font-size:20px;
+		margin-top:20px;
+		margin-right: 5px;
+		padding-right: 5px;
+		margin-left: -30px;
+	}
+	#contacticons2{
+		font-size:25px;
+		padding-right: 5px;
+		margin-top:20px;
+	}
+	
+	.dropdown {
+     position: relative;
+     display: inline-block;
+     transition: height .4s ease;
+    }
+	.drop {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+   }
+
+.drop:hover, .drop:focus {
+  background-color: #2980B9;
+  transition: height .4s ease;
+}
+
+.dropdown {
+  position: fixed;
+  display: none;
+  height: 100%;
+  transition: all .3s ease;
+
+}
+
+.dropdown-content {
+  border-top:10px solid #4092f0;
+  -webkit-box-shadow: -10px 5px 22px -13px rgba(109,108,120,0.49);
+  -moz-box-shadow: -10px 5px 22px -13px rgba(109,108,120,0.49);
+  box-shadow: -10px 5px 22px -13px rgba(109,108,120,0.49);
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 70%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 30px;
+  margin-top: 20px;
+  text-align: left;
+  align-items:center;
+  height: 100%;
+  width: 100%;
+  transition: all .3s ease;
+  transform: translateY(0);
+  
+}
+
+.dropdown-content a {
+  color: #7fb8f8;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin-left: 25px;
+  font-size: 45px;
+  margin-top: 10px;
+  transform: translateY(0);
+
+}
+.dropdown a:hover {
+  height: 200px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.dropdown a:hover {background-color: #ddd;}
+	.banner2 { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    background-color:#7fb8f8;
+    height:120px;
+    color:black;
+    width: 100%; 
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    opacity: 1.0;
+    -webkit-animation: Animation 5s ease infinite;
+    -moz-animation: Animation 5s ease infinite;
+    animation: Animation 5s ease infinite;
+	-webkit-box-shadow: 0px -39px 12px 34px rgba(10,10,10,1);
+-moz-box-shadow: 0px -39px 12px 34px rgba(10,10,10,1);
+box-shadow: 0px -39px 12px 34px rgba(10,10,10,1);
+}
+.banner2 {
+   /*#2e79c0 #4092f0 */
+  position:fixed;
+  left:0;
+  top:0;
+  bottom:94%;
+  overflow: hidden;
+  height: 50px !important;
+  width:100%;
+  padding:0;
+  z-index:100;
+  transition: all .50s cubic-bezier(.570,0,.080,1);
+}
+.banner2--unpinned {
+  transform: translateY(-100%);
+  
+}
+#menuicon{
+	visibility: hidden;
+}
+
+  div#banner-content { 
+    margin-left: -30px;
+    padding: 10px; 
+    margin-top: -15px !important;
+	font-size:20px;
+	padding-right:50px;
+	text-decoration: none;
+	color: white;
+  }
+  div#banner-content2 { 
+    margin: 0 auto; 
+    padding: 10px; 
+    margin-top: 8px !important;
+  }
+
+	h1{
+		font-size: 30px;
+		margin-top: 20px;
+		color:black;
+	}
+	h2{
+		text-align: left;
+		font-size: 25px !important;
+	    line-height:1.6em !important;
+	}
+
+	
+	
+	h1, h3
+	{
+		margin: 0;
+		padding: 0;
+		margin-top: -3%!important;
+		color: #404040;
+	}
+	
+	
+	p, ol, ul
+	{
+		margin-top: 0;
+	}
+	
+	ol, ul
+	{
+		padding: 0;
+		list-style: none;
+	}
+	
+	p
+	{
+		line-height: 180%;
+	}
+	
+	strong
+	{
+	}
+	
+	
+	
+	a:hover
+	{
+		text-decoration: none;
+	}
+	
+
+	.container
+	{
+		margin: 0px;
+		width: 100%;
+	}
+	
+
+/*********************************************************************************/
+/* Form Style                                                                    */
+/*********************************************************************************/
+
+		form
+		{
+		}
+		
+			form label
+			{
+				display: block;
+				text-align: left;
+				margin-bottom: 0.5em;
+			}
+			
+			form .submit
+			{
+				margin-top: 2em;
+				line-height: 1.5em;
+				font-size: 1.3em;
+			}
+		
+			form input.text,
+			form select,
+			form textarea
+			{
+				position: relative;
+				-webkit-appearance: none;
+				display: block;
+				border: 0;
+				background: transparent;
+				width: 100%;
+				border-radius: 20px;
+				margin: 1em 0em;
+				padding: 1.50em 1em;
+				border: solid 5px white;
+				-moz-transition: all 0.35s ease-in-out;
+				-webkit-transition: all 0.35s ease-in-out;
+				-o-transition: all 0.35s ease-in-out;
+				-ms-transition: all 0.35s ease-in-out;
+				transition: all 0.35s ease-in-out;
+				font-size: 1em;
+				outline: none;
+			}
+
+				form input.text:hover,
+				form select:hover,
+				form textarea:hover
+				{
+				}
+
+				form input.text:focus,
+				form select:focus,
+				form textarea:focus
+				{
+					box-shadow: 0 0 2px 1px #E0E0E0;
+					background: #fff;
+				}
+				
+				form textarea
+				{
+					min-height: 12em;
+				}
+
+				
+
+				form ::-moz-focus-inner
+				{
+					border: 0;
+				}
+
+
+/*********************************************************************************/
+/* Image Style                                                                   */
+/*********************************************************************************/
+
+	.image
+	{
+		display: inline-block;
+		border: 1px solid rgba(0,0,0,.1);
+	}
+	
+	.image img
+	{
+		display: block;
+		width: 100%;
+	}
+	
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 0 0 3em 0;
+	}
+	
+	.image-left
+	{
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+	
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+	
+	.image-centered img
+	{
+		margin: 0 auto;
+		width: auto;
+	}
+
+/*********************************************************************************/
+/* List Styles                                                                   */
+/*********************************************************************************/
+
+	ul.style1
+	{
+	}
+
+
+/*********************************************************************************/
+/* Social Icon Styles                                                            */
+/*********************************************************************************/
+
+	ul.contact
+	{
+		margin: 0;
+		padding: 0em 0em 0em 0em;
+		list-style: none;
+	}
+	
+	ul.contact li
+	{
+		display: inline-block;
+		padding: 0em 0.00em;
+		
+	}
+	
+	ul.contact li span
+	{
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	ul.contact li a
+	{
+		color: #FFF;
+	}
+	
+	ul.contact li a:before
+	{
+		display: inline-block;
+		background: #4C93B9;
+		width: 10px;
+		height: 10px;
+		line-height: 40px;
+		text-align: center;
+		color: rgba(255,255,255,1);
+	}
+	
+
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+	.button
+	{
+		display: inline-block;
+		margin-top: 2em;
+		padding: 0.8em 2em;
+		background: #64ABD1;
+		line-height: 1.8em;
+		letter-spacing: 1px;
+		text-decoration: none;
+		font-size: 1em;
+		color: #FFF;
+	}
+	
+	.button:before
+	{
+		display: inline-block;
+		background: #8DCB89;
+		margin-right: 1em;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 20px;
+		text-align: center;
+		color: #272925;
+	}
+	
+	.button-small
+	{
+	}
+		
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+	.title
+	{
+	 margin:5%;
+	}
+	
+	.title h2
+	{
+		font-size: 2.8em;
+	}
+	
+	.title .byline
+	{
+		font-size: 1.1em;
+		color: #6F6F6F;
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+		padding: 8em 0em 4em 0em;
+	}
+	
+	#logo h1
+	{
+		display: block;
+		margin-bottom: 0.20em;
+		padding: 0.20em 0.9em;
+		font-size: 3.5em;
+	}
+	
+	#logo a
+	{
+		text-decoration: none;
+		color: #FFF;
+	}
+	
+	#logo span
+	{
+		text-transform: uppercase;
+		font-size: 2.90em;
+		color: rgba(255,255,255,1);
+	}
+
+	#logo span a
+	{
+		color: rgba(255,255,255,0.8);
+	}
+	
+	
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+	
+	
+	
+	
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		padding-top: 5em;
+	}
+
+/*********************************************************************************/
+/* Wrapper                                                                       */
+/*********************************************************************************/
+
+
+	.wrapper
+	{
+		overflow: hidden;
+		padding:0%;
+		background:#f8f9fc;
+	}
+
+	#wrapper1
+	{
+		background: #FFF;
+	}
+
+	#wrapper2
+	{
+		overflow: hidden;
+		background: #F3F3F3;
+		padding: 5em 0em;
+		text-align: center;
+	}
+
+	#wrapper3
+	{
+	}
+	
+	#wrapper4
+	{
+	}
+
+/*********************************************************************************/
+/* Welcome                                                                       */
+/*********************************************************************************/
+
+	#welcome
+	{
+		overflow: hidden;
+		width: 100%;
+		padding: 80px;
+		text-align: center;
+	}
+	
+	#welcome .content
+	{
+		padding: 8em 8em;
+	}
+	
+	#welcome .title h2
+	{
+	}
+	
+	#welcome a,
+	#welcome strong
+	{
+	}
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+	#page-wrapper
+	{
+		overflow: hidden;
+		background: #2F1E28;
+		padding: 6em 0em 6em 0em;
+		text-align: center;
+	}
+
+	#page
+	{
+	}
+
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+	#content
+	{
+		float: center;
+		width: 100%;
+		padding-right: 100px;
+		border-right: 1px solid rgba(0,0,0,.1);
+	}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+
+	#sidebar
+	{
+		float: right;
+		width: 70%;
+	}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+		overflow: hidden;
+		padding: 5em 0em;
+		background: #E3F0F7;
+		text-align: center;
+	}
+
+
+		
+	#footer .fbox1,
+	#footer .fbox2,
+	#footer .fbox3
+	{
+		float: left;
+		width: 320px;
+		padding: 0px 40px 0px 40px;
+	}
+	
+	#footer .icon
+	{
+		display: block;
+		margin-bottom: 1em;
+		font-size: 3em;
+	}
+
+	
+	#footer .title span
+	{
+		color: rgba(255,255,255,0.4);
+	}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+	.copyright{
+		color:white;
+		overflow: hidden;
+		padding: 5em 0em;
+		text-align: center;
+	}
+	.copyright a{
+		font-weight: bolder;
+		color:white;
+	}
+	#copyright
+	{
+		overflow: hidden;
+		padding: 5em 0em;
+		border-top: 20px solid rgba(255,255,255,0.08);
+		text-align: center;
+	}
+	
+	#copyright p
+	{
+		letter-spacing: 1px;
+		font-size: 0.90em;
+		color: rgba(255,255,255,0.6);
+	}
+	
+	#copyright a
+	{
+		text-decoration: none;
+		color: rgba(255,255,255,0.8);
+	}
+
+/*********************************************************************************/
+/* Newsletter                                                                    */
+/*********************************************************************************/
+
+	#newsletter
+	{
+		overflow: hidden;
+		padding: 8em 0em;
+		background: #EDEDED;
+		text-align: center;
+	}
+	
+	#newsletter .title h2
+	{
+		color: rgba(0,0,0,0.8);
+	}
+	
+	#newsletter .content
+	{
+		width: 100%;
+		margin: 0px auto;
+	}
+	
+/*********************************************************************************/
+/* Portfolio                                                                     */
+/*********************************************************************************/
+
+	#portfolio
+	{
+		overflow: hidden;
+		padding-top: 5em;
+		border-top: 1px solid rgba(0,0,0,0.2);
+	}
+	
+	#portfolio .box
+	{
+		text-align: center;
+		color: rgba(0,0,0,0.5);
+	}
+	
+	#portfolio h3
+	{
+		display: block;
+		padding-bottom: 1em;
+		font-size: 1em;
+		color: rgba(0,0,0,0.6);
+	}
+
+	#portfolio .title
+	{
+		text-align: center;
+	}
+
+	#portfolio .title h2
+	{
+		color: rgba(0,0,0,0.8);
+	}
+
+	.column1,
+	.column2,
+	.column3,
+	.column4
+	{
+		width: 282px;
+	}
+	
+	.column1,
+	.column2,
+	.column3
+	{
+		float: left;
+		margin-right: 24px;
+	}
+	
+	.column4
+	{
+		float: right;
+	}
+
+/*********************************************************************************/
+/* Three Columns                                                                 */
+/*********************************************************************************/
+
+	#three-column
+	{
+		overflow: hidden;
+		margin-top: 5em;
+		padding-top: 1em;
+		border-top: 1px solid rgba(0,0,0,0.2);
+		text-align: center;
+	}
+	
+	#three-column h2
+	{
+		margin: 1em 0em;
+		font-size: 1.5em;
+		font-weight: 700;
+	}
+	
+	#three-column .icon
+	{
+		position: relative;
+		display: block;
+		margin: 0px auto 0.80em auto;
+		background: none;
+		line-height: 150px;
+		font-size: 4em;
+		width: 150px;
+		height: 150px;
+		border-radius: 100px;
+		border: 6px solid #67128F;
+		text-align: center;
+		color: #FFF;
+		
+	}
+		
+	#three-column #tbox1,
+	#three-column #tbox2,
+	#three-column #tbox3
+	{
+		float: left;
+		width: 320px;
+		padding: 80px 40px 80px 40px;
+	}
+	
+	#three-column .title
+	{
+		text-align: center;
+	}
+	
+	#three-column .title h2
+	{
+		font-size: 1.60em;
+	}
+	
+	#three-column .title .byline
+	{
+		padding-top: 0.50em;
+		font-size: 0.90em;
+		color: #858585;
+	}
+
+	#three-column .arrow-down
+	{
+		border-top-color: #292929;
+	}
+	
+	
+	ul.tools
+	{
+		margin: 0;
+		padding: 0em 0em 0em 0em;
+		list-style: none;
+	}
+	
+	ul.tools li
+	{
+		display: inline-block;
+		padding: 0em .2em;
+		font-size: 4em;
+	}
+	
+	ul.tools li span
+	{
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	ul.tools li a
+	{
+		color: #FFF;
+	}
+	
+	ul.tools li a:before
+	{
+		display: inline-block;
+		background: #4092f0;
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+		line-height: 120px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	#header-wrapper
+	{
+		overflow: hidden;
+		background: transparent;
+	}
+
+	#header
+	{
+		text-align: center;
+	}
+	#desktop{
+		visibility:visible;
+	}		
+	#menu2
+	{
+		height: 60px;
+	}
+	
+	#menu2 ul
+	{
+		display: inline-block;
+		padding: 0em 0.0em;
+		text-align: center;
+	}
+	
+	#menu2 li
+	{
+		display: inline-table;
+	}
+	
+	#menu2 li a, #menu2 li span
+	{
+		display: inline-block;
+		padding: 0em 1.0em;
+		text-decoration: none;
+		font-size: 0.9em;
+		font-weight: 800;
+		text-transform: uppercase;
+		line-height: 60px;
+		outline: 0;
+		background:transparent;
+		border:none;
+		color: white;
+	}
+	
+	#menu2 li:hover a, #menu2 li.active a, #menu2 li.active span
+	{
+		background: #7FB8FB;
+		border-radius: 7px 7px 0px 0px;
+		color: white;
+	}
+	#menu3
+	{
+		height: 60px;
+		margin-top:0px;
+		text-align:center;
+z-index: 10000000;
+margin-bottom:50px;
+	}
+	
+	#menu3 ul
+	{
+		display: inline-block;
+		padding: 0em 0.0em;
+		text-align: center;
+		overflow: hidden;
+
+	}
+	
+	#menu3 li
+	{
+		display: inline-table;
+	}
+	
+	#menu3 li a, #menu3 li span
+	{
+		display: inline-block;
+		padding: 0em 0.8em;
+		text-decoration: none;
+		font-size: 1.2em;
+		font-weight: 800;
+		text-transform: uppercase;
+		line-height: 60px;
+		outline: 0;
+		color:white;
+		background:transparent;
+		border:none;
+	}
+	
+	#menu3 li:hover a, #menu3 li.active a, #menu3 li.active span
+	{
+		background: white;
+		border-radius: 7px 7px 0px 0px;
+		color: #7FB8FB !important;
+	}
+	#header-wrapper
+	{
+		overflow: hidden;
+		background: transparent;
+	}
+
+	#header
+	{
+		text-align: center;
+	}
+}	
+
+@media (any-pointer: coarse) {
+	
+	html, body
+	{
+		height: 100%;
+	}
+	
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #f2f5f7;
+		font-family: 'Questrial', sans-serif;
+		font-size: 17px;
+		color: rgba(0,0,0,.6);
+	}
+	#content { margin: 50px; } 
+a { text-decoration: none; }  
+ 
+.expandable {
+  background: #fff;
+  overflow: hidden;
+  color: #000;   
+  line-height: 50px;
+
+  transition: all .5s ease-in-out;
+  transform-origin: left top;
+  transform: scaleY(0);
+ }
+ 
+ .expandable:target {
+  transform: scaleY(1);
+}
+	#hidden{
+		visibility: hidden !important;
+		display:none !important;
+	}
+
+	.slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 70%;
+  min-height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  display: none;
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  background-color: #FFF; /* A background-color is required */
+  min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+#myDropdown{
+	transition: all .5s ease-in-out;
+  transform-origin: top;
+  transform: scaleY(1);
+}
+	
+	#address{
+		visibility: hidden;
+	}
+	#logo{
+		margin-top: 3%;
+	}
+	#bannerpic{
+		margin-top: -8px;
+	}
+	#contacticons{
+		font-size:30px;
+		margin-top:0px;
+		margin-right: 5px;
+		margin-left: -50px;
+	}
+	#contacticons2{
+		font-size:36px;
+		
+	}
+	
+	.drop {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+   }
+
+.drop:hover, .drop:focus {
+  background-color: #2980B9;
+  transition: height .4s ease;
+}
+
+.dropdown {
+  position: fixed;
+  display: inline-block;
+  height: 100%;
+  transition: all .3s ease;
+}
+
+.dropdown-content {
+  border-top:none;
+  -webkit-box-shadow: -10px 5px 22px -13px rgba(109,108,120,0.49);
+  -moz-box-shadow: -10px 5px 22px -13px rgba(109,108,120,0.49);
+  box-shadow: -10px 5px 22px -13px rgba(109,108,120,0.49);
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 900px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 30px;
+  margin-top: 24px;
+  text-align: left;
+  align-items:center;
+  height: 100%;
+  width: 100%;
+  transition: all .3s ease;
+  transform: translateY(0);
+
+  
+}
+
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin-left: 25px;
+  font-size: 45px;
+  margin-top: 10px;
+  transform: translateY(0);
+
+}
+.dropdown a:hover {
+  height: 200px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown a:hover {background-color: #ddd;}
+	.banner2 { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    background-color:#7fb8f8;
+    height:120px;
+    color:black;
+    width: 100%; 
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    opacity: 1.0;
+    -webkit-animation: Animation 5s ease infinite;
+    -moz-animation: Animation 5s ease infinite;
+    animation: Animation 5s ease infinite;
+	-webkit-box-shadow: 0px -39px 12px 34px rgba(10,10,10,1);
+-moz-box-shadow: 0px -39px 12px 34px rgba(10,10,10,1);
+box-shadow: 0px -39px 12px 34px rgba(10,10,10,1);
+}
+.banner2 {
+   /*#2e79c0 #4092f0 */
+  position:fixed;
+  left:0;
+  top:0;
+  bottom:94%;
+  overflow: hidden;
+  width:100%;
+  padding:0;
+  z-index:100;
+  transition: all .50s cubic-bezier(.570,0,.080,1);
+}
+.banner2--unpinned {
+  transform: translateY(-100%);
+  
+}
+#desktop{
+	display: none;
+}
+  div#banner-content { 
+    margin-left: 30px;
+    padding: 10px; 
+    margin-top: 25px !important;
+	padding-right:50px;
+	text-decoration: none;
+	color: white;
+  }
+  div#banner-content2 { 
+    margin: 0 auto; 
+    padding: 10px; 
+    margin-top: 8px !important;
+  }
+
+	h2{
+		margin-top: 20px;
+		color:black;
+		text-align: left;
+	    
+	}
+	
+	
+	h1, h3
+	{
+		margin: 0;
+		padding: 0;
+		color: #404040;
+	}
+	
+	p, ol, ul
+	{
+		margin-top: 0;
+	}
+	
+	ol, ul
+	{
+		padding: 0;
+		list-style: none;
+	}
+	
+	p
+	{
+		line-height: 180%;
+	}
+	
+	strong
+	{
+	}
+	
+	
+	
+	a:hover
+	{
+		text-decoration: none;
+	}
+	
+
+	.container
+	{
+		margin: 0px;
+		width: 100%;
+	}
+	
+
+/*********************************************************************************/
+/* Form Style                                                                    */
+/*********************************************************************************/
+
+		form
+		{
+		}
+		
+			form label
+			{
+				display: block;
+				text-align: left;
+				margin-bottom: 0.5em;
+			}
+			
+			form .submit
+			{
+				margin-top: 2em;
+				line-height: 1.5em;
+				font-size: 1.3em;
+			}
+		
+			form input.text,
+			form select,
+			form textarea
+			{
+				position: relative;
+				-webkit-appearance: none;
+				display: block;
+				border: 0;
+				
+				width: 100%;
+				border-radius: 0.50em;
+				margin: 1em 0em;
+				padding: 1.50em 1em;
+				
+				border: solid 5px white;
+				-moz-transition: all 0.35s ease-in-out;
+				-webkit-transition: all 0.35s ease-in-out;
+				-o-transition: all 0.35s ease-in-out;
+				-ms-transition: all 0.35s ease-in-out;
+				transition: all 0.35s ease-in-out;
+				font-size: 1em;
+				outline: none;
+			}
+
+				form input.text:hover,
+				form select:hover,
+				form textarea:hover
+				{
+				}
+
+				form input.text:focus,
+				form select:focus,
+				form textarea:focus
+				{
+					box-shadow: 0 0 2px 1px #E0E0E0;
+					background: #fff;
+				}
+				
+				form textarea
+				{
+					min-height: 12em;
+				}
+
+				
+
+				
+
+				form ::-moz-focus-inner
+				{
+					border: 0;
+				}
+
+
+/*********************************************************************************/
+/* Image Style                                                                   */
+/*********************************************************************************/
+
+	.image
+	{
+		display: inline-block;
+		border: 1px solid rgba(0,0,0,.1);
+	}
+	
+	.image img
+	{
+		display: block;
+		width: 100%;
+	}
+	
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 0 0 3em 0;
+	}
+	
+	.image-left
+	{
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+	
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+	
+	.image-centered img
+	{
+		margin: 0 auto;
+		width: auto;
+	}
+
+/*********************************************************************************/
+/* List Styles                                                                   */
+/*********************************************************************************/
+
+	ul.style1
+	{
+	}
+
+
+/*********************************************************************************/
+/* Social Icon Styles                                                            */
+/*********************************************************************************/
+
+	ul.contact
+	{
+		margin: 0;
+		padding: 0em 0em 0em 0em;
+		list-style: none;
+	}
+	
+	ul.contact li
+	{
+		display: inline-block;
+		padding: 0em 0.00em;
+		
+	}
+	
+	ul.contact li span
+	{
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	ul.contact li a
+	{
+		color: #FFF;
+	}
+	
+	ul.contact li a:before
+	{
+		display: inline-block;
+		background: #4C93B9;
+		width: 10px;
+		height: 10px;
+		line-height: 40px;
+		text-align: center;
+		color: rgba(255,255,255,1);
+	}
+	
+
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+	.button
+	{
+		display: inline-block;
+		margin-top: 2em;
+		padding: 0.8em 2em;
+		background: #64ABD1;
+		line-height: 1.8em;
+		letter-spacing: 1px;
+		text-decoration: none;
+		font-size: 1em;
+		color: #FFF;
+	}
+	
+	.button:before
+	{
+		display: inline-block;
+		background: #8DCB89;
+		margin-right: 1em;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 20px;
+		text-align: center;
+		color: #272925;
+	}
+	
+	.button-small
+	{
+	}
+		
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+	.title
+	{
+	 margin:5%;
+	}
+	
+	.title h2
+	{
+		font-size: 2.8em;
+	}
+	
+	.title .byline
+	{
+		font-size: 1.1em;
+		color: #6F6F6F;
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+		padding: 8em 0em 2em 0em;
+	}
+	
+	#logo h1
+	{
+		display: block;
+		margin-bottom: 0.20em;
+		padding: 0.20em 0.9em;
+		font-size: 3.5em;
+	}
+	
+	#logo a
+	{
+		text-decoration: none;
+		color: #FFF;
+	}
+	
+	#logo span
+	{
+		text-transform: uppercase;
+		font-size: 2.90em;
+		color: rgba(255,255,255,1);
+	}
+
+	#logo span a
+	{
+		color: rgba(255,255,255,0.8);
+	}
+	
+	
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+	
+	
+	
+	
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		padding-top: 5em;
+	}
+
+/*********************************************************************************/
+/* Wrapper                                                                       */
+/*********************************************************************************/
+
+
+	.wrapper
+	{
+		overflow: hidden;
+		padding: 0em 0em 2.5em 0em;
+		background:#f8f9fc;
+	}
+
+	#wrapper1
+	{
+		background: #FFF;
+	}
+
+	#wrapper2
+	{
+		overflow: hidden;
+		background: #F3F3F3;
+		padding: 5em 0em;
+		text-align: center;
+	}
+
+	#wrapper3
+	{
+	}
+	
+	#wrapper4
+	{
+	}
+
+/*********************************************************************************/
+/* Welcome                                                                       */
+/*********************************************************************************/
+
+	#welcome
+	{
+		overflow: hidden;
+		width: 100%;
+		padding: 80px;
+		text-align: center;
+	}
+	
+	#welcome .content
+	{
+		padding: 8em 8em;
+	}
+	
+	#welcome .title h2
+	{
+	}
+	
+	#welcome a,
+	#welcome strong
+	{
+	}
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+	#page-wrapper
+	{
+		overflow: hidden;
+		background: #2F1E28;
+		padding: 6em 0em 6em 0em;
+		text-align: center;
+	}
+
+	#page
+	{
+	}
+
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+	#content
+	{
+		float: center;
+		width: 100%;
+		padding-right: 100px;
+		border-right: 1px solid rgba(0,0,0,.1);
+	}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+
+	#sidebar
+	{
+		float: right;
+		width: 70%;
+	}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+		overflow: hidden;
+		padding: 5em 0em;
+		background: #E3F0F7;
+		text-align: center;
+	}
+
+
+		
+	#footer .fbox1,
+	#footer .fbox2,
+	#footer .fbox3
+	{
+		float: left;
+		width: 320px;
+		padding: 0px 40px 0px 40px;
+	}
+	
+	#footer .icon
+	{
+		display: block;
+		margin-bottom: 1em;
+		font-size: 3em;
+	}
+
+	
+	#footer .title span
+	{
+		color: rgba(255,255,255,0.4);
+	}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+	.copyright{
+		color:white;
+		overflow: hidden;
+		padding: 5em 0em;
+		text-align: center;
+	}
+	.copyright a{
+		font-weight: bolder;
+		color:white;
+	}
+	#copyright
+	{
+		overflow: hidden;
+		padding: 5em 0em;
+		border-top: 20px solid rgba(255,255,255,0.08);
+		text-align: center;
+	}
+	
+	#copyright p
+	{
+		letter-spacing: 1px;
+		font-size: 0.90em;
+		color: rgba(255,255,255,0.6);
+	}
+	
+	#copyright a
+	{
+		text-decoration: none;
+		color: rgba(255,255,255,0.8);
+	}
+
+/*********************************************************************************/
+/* Newsletter                                                                    */
+/*********************************************************************************/
+
+	#newsletter
+	{
+		overflow: hidden;
+		padding: 8em 0em;
+		background: #EDEDED;
+		text-align: center;
+	}
+	
+	#newsletter .title h2
+	{
+		color: rgba(0,0,0,0.8);
+	}
+	
+	#newsletter .content
+	{
+		width: 100%;
+		margin: 0px auto;
+	}
+	
+/*********************************************************************************/
+/* Portfolio                                                                     */
+/*********************************************************************************/
+
+	#portfolio
+	{
+		overflow: hidden;
+		padding-top: 5em;
+		border-top: 1px solid rgba(0,0,0,0.2);
+	}
+	
+	#portfolio .box
+	{
+		text-align: center;
+		color: rgba(0,0,0,0.5);
+	}
+	
+	#portfolio h3
+	{
+		display: block;
+		padding-bottom: 1em;
+		font-size: 1em;
+		color: rgba(0,0,0,0.6);
+	}
+
+	#portfolio .title
+	{
+		text-align: center;
+	}
+
+	#portfolio .title h2
+	{
+		color: black;
+	}
+
+	.column1,
+	.column2,
+	.column3,
+	.column4
+	{
+		width: 282px;
+	}
+	
+	.column1,
+	.column2,
+	.column3
+	{
+		float: left;
+		margin-right: 24px;
+	}
+	
+	.column4
+	{
+		float: right;
+	}
+
+/*********************************************************************************/
+/* Three Columns                                                                 */
+/*********************************************************************************/
+
+	#three-column
+	{
+		overflow: hidden;
+		margin-top: 5em;
+		padding-top: 1em;
+		border-top: 1px solid rgba(0,0,0,0.2);
+		text-align: center;
+	}
+	
+	#three-column h2
+	{
+		margin: 1em 0em;
+		font-size: 1.5em;
+		font-weight: 700;
+	}
+	
+	#three-column .icon
+	{
+		position: relative;
+		display: block;
+		margin: 0px auto 0.80em auto;
+		background: none;
+		line-height: 150px;
+		font-size: 4em;
+		width: 150px;
+		height: 150px;
+		border-radius: 100px;
+		border: 6px solid #67128F;
+		text-align: center;
+		color: #FFF;
+		
+	}
+		
+	#three-column #tbox1,
+	#three-column #tbox2,
+	#three-column #tbox3
+	{
+		float: left;
+		width: 320px;
+		padding: 80px 40px 80px 40px;
+	}
+	
+	#three-column .title
+	{
+		text-align: center;
+	}
+	
+	#three-column .title h2
+	{
+		font-size: 1.60em;
+	}
+	
+	#three-column .title .byline
+	{
+		padding-top: 0.50em;
+		font-size: 0.90em;
+		color: #858585;
+	}
+
+	#three-column .arrow-down
+	{
+		border-top-color: #292929;
+	}
+	
+	
+	ul.tools
+	{
+		margin: 0;
+		padding: 0em 0em 0em 0em;
+		list-style: none;
+	}
+	
+	ul.tools li
+	{
+		display: inline-block;
+		padding: 0em .2em;
+		font-size: 4em;
+	}
+	
+	ul.tools li span
+	{
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	ul.tools li a
+	{
+		color: #FFF;
+	}
+	
+	ul.tools li a:before
+	{
+		display: inline-block;
+		background: #4092f0;
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+		line-height: 120px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	#header-wrapper
+	{
+		overflow: hidden;
+		background: #f8f9fc;
+	}
+
+	#header
+	{
+		text-align: center;
+	}
+	#desktop{
+		visibility:visible;
+	}		
+	#menu2
+	{
+		visibility: hidden;
+	}
+	
+	#menu2 ul
+	{
+		display: none;
+		padding: 0em 0em;
+		text-align: center;
+	}
+	
+	#menu2 li
+	{
+		display: inline-flex;
+	}
+	
+	#menu2 li a, #menu2 li span
+	{
+		display: inline-flex;
+		padding: 0em 1.0em;
+		text-decoration: none;
+		font-size: 0.9em;
+		font-weight: 800;
+		text-transform: uppercase;
+		line-height: 60px;
+		outline: 0;
+		color: #FFF;
+	}
+	
+	#menu2 li:hover a, #menu2 li.active a, #menu2 li.active span
+	{
+		background: #FFF;
+		border-radius: 7px 7px 0px 0px;
+		color:#98c6fb;
+	}
+	#header-wrapper
+	{
+		overflow: hidden;
+		background: #f8f9fc;
+	}
+
+	#header
+	{
+		text-align: center;
+	}
+		
+}
+	
+	
+	
+	</style>
+	
+
+	<script src="/static/assets/js/plugins/countup.min.js"></script>
+	<script src="/static/assets/js/plugins/choices.min.js"></script>
+	<script src="/static/assets/js/plugins/rellax.min.js"></script>
+	<script src="/static/assets/js/plugins/tilt.min.js"></script>
+	<script src="/static/assets/js/plugins/choices.min.js"></script>
+  
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+	<script src="/static/assets/js/soft-design-system.min.js?v=1.0.1" type="text/javascript"></script>
+	<script>
+		if (document.getElementsByClassName('header-wrapper')) {
+		  window.addEventListener('scroll', function() {
+			var scrollPosition = window.pageYOffset;
+			var bgParallax = document.querySelector('.header-wrapper');
+			var limit = bgParallax.offsetTop + bgParallax.offsetHeight;
+			if (scrollPosition > bgParallax.offsetTop || scrollPosition <= limit) {
+			  bgParallax.style.backgroundPositionY = (50 - 10 * scrollPosition / limit * 3) + '%';
+			} else {
+			  bgParallax.style.backgroundPositionY = '50%';
+			}
+		  });
+		}
+	  </script>	
+<script>
+	var header = document.querySelector('.banner2');
+	var headroom = new Headroom(header, {
+	  "offset": 20,
+	  "tolerance": 8,
+	  "classes": {
+		"unpinned": "banner2--unpinned"
+	  }
+	});
+	const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+		if (isMobile) {
+		   headroom.init(); 
+		}
+	
+	</script>
+<script>
+
+	 
+	 // Get The NavBar
+window.addEventListener('scroll',function(){
+		var lastScrollTop; // This Varibale will store the top position
+   
+     	header = document.getElementById('header-wrapper');
+	 	top = document.getElementById('top'); // Get The NavBar
+	//on every scroll this funtion will be called
+	 	var scrollTop = document.documentElement.scrollTop;
+	 //This line will get the location on scroll	 
+	 if(scrollTop >= lastScrollTop){ //if it will be greater than the previous
+	   top.style.opacity='0.0';
+	 }
+	 else{
+	  top.style.opacity='1.0';  
+	 }
+	 
+	 lastScrollTop = scrollTop; //New Position Stored
+});
+</script>	 
+<script>
+	
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links in navbar + footer link
+	  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+		  // Prevent default anchor click behavior
+		  event.preventDefault();
+	
+		  // Store hash
+		  var hash = this.hash;
+	
+		  // Using jQuery's animate() method to add smooth page scroll
+		  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+		  $('html, body').animate({
+			scrollTop: $(hash).offset().top
+		  }, 900, function(){
+	   
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+		  });
+		} // End if
+	  });
+	  
+	  $(window).scroll(function() {
+		$(".slideanim").each(function(){
+		  var pos = $(this).offset().top;
+	
+		  var winTop = $(window).scrollTop();
+			if (pos < winTop + 600) {
+			  $(this).addClass("slide");
+			}
+		});
+	  });
+	})
+	</script>
+
+<script>
+		
+	function myFunction() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
+	function closeMenu() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
+	
+
+	window.onclick = function(event) {
+	  if (!event.target.matches('.material-icons')) {
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+	</script>
+
+	
+
