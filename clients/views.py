@@ -200,6 +200,14 @@ def index(request):
         return render(request, 'ecommerce/temp.html', context)
 
 @csrf_exempt
+def demo(request):
+   
+    context = {
+        'form': IntakeForm,
+    }
+        return render(request, 'ecommerce/demo.html', context)
+
+@csrf_exempt
 def email_tg(request):
     subject = request.POST.get("subject", "Membership follow up")
     message = request.POST.get("message", "")
