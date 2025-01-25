@@ -193,11 +193,7 @@ def index(request):
     context = {
         'form': IntakeForm,
     }
-    if (is_mobile(request)):
-
         return render(request, 'ecommerce/index.html', context)
-    else:
-        return render(request, 'ecommerce/temp.html', context)
 
 @csrf_exempt
 def demo(request):
